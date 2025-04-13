@@ -1,0 +1,2830 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesService"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#latitude"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Car"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalCar"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Rideshare"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Taxi"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#CarSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#DirectItinerary"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FastestItinerary"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#CityBusService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlixbusService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#InterCityBusService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#CommercialSite"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeLocation"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RecreationSite"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#WaitingSegment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "90.0"
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#CycleSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#ScooterSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#WalkSegment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Cycling"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Scooter"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Walking"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Driver"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Pilot"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Traveler"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#IntercityTrain"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RegionalTrain"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid146",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-90.0"
+  } ]
+}, {
+  "@id" : "_:genid150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid154",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPowered"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#longitude"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "180.0"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Bus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesMode"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-180.0"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#name"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#name"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesService"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasSchedule"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesService"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#name"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Train"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesMode"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#bookingFor"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#operatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#connectsWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#serves"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#operatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#madeBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasEnd"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasPlan"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasStart"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesService"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#AirlineService"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#arriveTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#departTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#duration"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasEnd"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasStart"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesMode"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#arriveTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#departTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#distance"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#duration"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Flight"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesMode"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#madeBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#bookingFor"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Airline"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusCompany"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryCompany"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalCompany"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareCompany"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainCompany"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramCompany"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#flightNumber"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#AirlineService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#Airport"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusStation"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroStation"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramStop"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Hotel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#bookingFor"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusBooking"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryBooking"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightBooking"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareBooking"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainBooking"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusRoute"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryRoute"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightRoute"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroRoute"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainRoute"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramRoute"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerrySegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainSegment"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramSegment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasSegment"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusinessTrip"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#LeisureTrip"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#OneWayTrip"
+    }, {
+      "@id" : "http://tripplanning/ontologies/tripplanning.owl#ReturnTrip"
+    } ]
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a platform build for ontologies used in planning trips"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "This is trip planning ontology"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#AirlineService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BikeRentalService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalService"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#CarRentalService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareService"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#UberService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A reservation for a specific transportation service, accommodation, or other travel-related service for a particular date and time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Booking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "44.8742"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-0.5935"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Golf Bluegreen Bordeaux"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#GolfCourse"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#bookingFor" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#currency" : [ {
+    "@value" : "EUR"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#madeBy" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripTraveler"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "420.00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HotelBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#city" : [ {
+    "@value" : "Bordeaux"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#country" : [ {
+    "@value" : "France"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "44.8448"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-0.5783"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Mercure Bordeaux Centre"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#postalCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "33000"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#street" : [ {
+    "@value" : "5 Rue Robert Lateulade"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Hotel"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "44.8263"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-0.5563"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Gare de Bordeaux-Saint-Jean"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStop" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeStation"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "M6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusRoute"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T07:20:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T07:15:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.2"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT5M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Walking"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#WalkSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusTicket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#bookingFor" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalBus"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#currency" : [ {
+    "@value" : "EUR"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#madeBy" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripTraveler"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Single Journey"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.50"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T07:15:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T06:55:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.2"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT20M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesService" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalBus"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#CityBusSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusinessTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Car",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CarRentalService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CarSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CityBus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Bus"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CityBusSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CityBusService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CommercialSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organization that provides transportation services, such as a railway company, bus operator, or airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#CycleSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Cycling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPowered"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#DirectItinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#AirlineService"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Driver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FastestItinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Ferry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerrySegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FerryService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlixbusService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#GolfCourse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RecreationSite"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Park"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Train"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Train"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Schedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "45.4395"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.3869"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Rue Pierre et Dominique Ponchardier"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T06:50:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T06:45:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.3"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT5M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienne"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Walking"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#WalkSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T07:20:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T07:00:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.5"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT20M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienne"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#CommercialSite"
+  }, {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HotelBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HotelChain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-21T09:30:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-21T09:00:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "15.0"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT30M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPowered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#InterCityBusService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#IntercityTrain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Train"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#AirlineService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A complete plan of a trip, consisting of ordered trip segments that together form the journey from the origin to the destination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Itinerary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#LeisureTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalBus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Saint-Etienne Public Bus"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#operatedBy" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#STAS"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalTaxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A  area relevant to trip planning, such as a departure area, destination, or intermediate stop. Locations can be residential addresses, transportation hubs, or destination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Bus"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "45.7605"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.8591"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Lyon Part-Dieu"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Metro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#MetroStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "43.6043"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.8816"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Montpellier Saint-Roch"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#OneWayTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Park",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RecreationSite"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual who travels or uses transportation services. A person can be associated with bookings and trips"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Pilot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  }, {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RecreationSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RegionalTrain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Train"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalCar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RentalService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#CommercialSite"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#ReturnTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Rideshare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A defined path between locations that is followed by a transportation service. Routes consist of a sequence of stops or waypoints."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SNCF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "SNCF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#STAS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "STAS"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "45.4397"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.3872"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "29 rue Ponchardier"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeLocation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "45.4411"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.3972"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Gare de Saint-Étienne-Châteaucreux"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T14:30:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T06:45:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT7H45M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasPlan" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienne"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#OneWayTrip"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasSegment" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#code" : [ {
+    "@value" : "TGV-STE-BDX"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStop" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Saint-Etienne to Bordeaux via Lyon"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainRoute"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T13:45:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T08:15:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "550.0"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT5H30M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesService" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The timetable for a transportation service, defining when it operates and at what times it reaches various stops or stations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Scooter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPowered"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#ScooterSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#CityBus"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T14:30:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T14:00:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "12.0"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT30M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#arriveTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T14:10:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#departTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T13:50:00"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.5"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#duration" : [ {
+    "@value" : "PT20M"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasEnd" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasStart" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#usesMode" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#followsRoute" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "TGV 6578 Saint-Etienne to Bordeaux"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#operatedBy" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#SNCF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#hasSchedule" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Train",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#bookingFor" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#madeBy" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripTraveler"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "45.4410"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.3968"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Gare Châteaucreux Bus Terminal"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#BusStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Tram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TramStop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  }, {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  }, {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  }, {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The method of transportation used for a trip segment, such as train, bus, car, or walking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Transportation Mode"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific service provided by a transportation company, such as a train line, bus route, or flight route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Transportation Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Traveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  }, {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A journey from one location to another, consisting of one or more segments using various modes of transportation. A trip has a defined start point, end point, and follows an itinerary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A single portion of a trip using one specific mode of transportation between two locations. Multiple trip segments form a complete itinerary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Trip Segment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid43"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  }, {
+    "@id" : "_:genid46"
+  }, {
+    "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripTraveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "sajid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Traveler"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#UberService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://tripplanning/ontologies/tripplanning.owl#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "44.9908"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.9753"
+  } ],
+  "http://tripplanning/ontologies/tripplanning.owl#name" : [ {
+    "@value" : "Valence TGV"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#WaitingSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#WalkSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#Walking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Walking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#HumanPowered"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Schedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Schedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#arriveTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#bookingFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#connectsWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#departTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#flightNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#followsRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#gate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasAlternative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasDropoff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasLastSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasPickup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasSchedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Schedule"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Trip"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#hasStop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#madeBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#maxBaggage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Route"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#nextSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#previousSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#operatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#phoneNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#platformNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TrainSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#previousSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#RideshareService"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#serves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Booking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#street",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#terminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Airport"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#FlightSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#usesService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ]
+}, {
+  "@id" : "http://tripplanning/ontologies/tripplanning.owl#website",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#Company"
+  }, {
+    "@id" : "http://tripplanning/ontologies/tripplanning.owl#TransportService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a platform build for ontologies used in planning trips"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TripPlanning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid50"
+  }, {
+    "@id" : "_:genid51"
+  } ]
+} ]

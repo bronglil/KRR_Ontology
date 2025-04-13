@@ -1,0 +1,1632 @@
+<http://tripplanning/ontologies/tripplanning.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://tripplanning/ontologies/tripplanning.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a platform build for ontologies used in planning trips"@en .
+<http://tripplanning/ontologies/tripplanning.owl> <http://www.w3.org/2000/01/rdf-schema#label> "This is trip planning ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://tripplanning/ontologies/tripplanning.owl#bookingFor
+<http://tripplanning/ontologies/tripplanning.owl#bookingFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#bookingFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#bookingFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#connectsWith
+<http://tripplanning/ontologies/tripplanning.owl#connectsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#connectsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#connectsWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+<http://tripplanning/ontologies/tripplanning.owl#connectsWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#followsRoute
+<http://tripplanning/ontologies/tripplanning.owl#followsRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#followsRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#followsRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasAlternative
+<http://tripplanning/ontologies/tripplanning.owl#hasAlternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasAlternative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#hasAlternative> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TransportMode> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasDropoff
+<http://tripplanning/ontologies/tripplanning.owl#hasDropoff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasDropoff> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#RideshareSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#hasDropoff> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasEnd
+<http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+<http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment
+<http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+<http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasLastSegment
+<http://tripplanning/ontologies/tripplanning.owl#hasLastSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasLastSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasLastSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+<http://tripplanning/ontologies/tripplanning.owl#hasLastSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasPickup
+<http://tripplanning/ontologies/tripplanning.owl#hasPickup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasPickup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#RideshareSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#hasPickup> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasPlan
+<http://tripplanning/ontologies/tripplanning.owl#hasPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+<http://tripplanning/ontologies/tripplanning.owl#hasPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasSchedule
+<http://tripplanning/ontologies/tripplanning.owl#hasSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+<http://tripplanning/ontologies/tripplanning.owl#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Schedule> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasSegment
+<http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+<http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasStart
+<http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+<http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#hasStop
+<http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+<http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#locatedIn
+<http://tripplanning/ontologies/tripplanning.owl#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#madeBy
+<http://tripplanning/ontologies/tripplanning.owl#madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#madeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#madeBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#nextSegment
+<http://tripplanning/ontologies/tripplanning.owl#nextSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#nextSegment> <http://www.w3.org/2002/07/owl#inverseOf> <http://tripplanning/ontologies/tripplanning.owl#previousSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#nextSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#nextSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#nextSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#operatedBy
+<http://tripplanning/ontologies/tripplanning.owl#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#previousSegment
+<http://tripplanning/ontologies/tripplanning.owl#previousSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#previousSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#previousSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#previousSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#serves
+<http://tripplanning/ontologies/tripplanning.owl#serves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#serves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#serves> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#usesMode
+<http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TransportMode> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#usesService
+<http://tripplanning/ontologies/tripplanning.owl#usesService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#usesService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#usesService> <http://www.w3.org/2000/01/rdf-schema#range> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://tripplanning/ontologies/tripplanning.owl#arriveTime
+<http://tripplanning/ontologies/tripplanning.owl#arriveTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#arriveTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+<http://tripplanning/ontologies/tripplanning.owl#arriveTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#arriveTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#city
+<http://tripplanning/ontologies/tripplanning.owl#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#city> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#city> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#code
+<http://tripplanning/ontologies/tripplanning.owl#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+<http://tripplanning/ontologies/tripplanning.owl#code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#country
+<http://tripplanning/ontologies/tripplanning.owl#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#currency
+<http://tripplanning/ontologies/tripplanning.owl#currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#currency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#currency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#currency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#departTime
+<http://tripplanning/ontologies/tripplanning.owl#departTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#departTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+<http://tripplanning/ontologies/tripplanning.owl#departTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#departTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#distance
+<http://tripplanning/ontologies/tripplanning.owl#distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#distance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#distance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#duration
+<http://tripplanning/ontologies/tripplanning.owl#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#duration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+<http://tripplanning/ontologies/tripplanning.owl#duration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#email
+<http://tripplanning/ontologies/tripplanning.owl#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+<http://tripplanning/ontologies/tripplanning.owl#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+<http://tripplanning/ontologies/tripplanning.owl#email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#flightNumber
+<http://tripplanning/ontologies/tripplanning.owl#flightNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#flightNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#FlightSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#flightNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#gate
+<http://tripplanning/ontologies/tripplanning.owl#gate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#gate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#FlightSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#gate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#latitude
+<http://tripplanning/ontologies/tripplanning.owl#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#longitude
+<http://tripplanning/ontologies/tripplanning.owl#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#maxBaggage
+<http://tripplanning/ontologies/tripplanning.owl#maxBaggage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#maxBaggage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#maxBaggage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#name
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#phoneNumber
+<http://tripplanning/ontologies/tripplanning.owl#phoneNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#phoneNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+<http://tripplanning/ontologies/tripplanning.owl#phoneNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+<http://tripplanning/ontologies/tripplanning.owl#phoneNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#platformNumber
+<http://tripplanning/ontologies/tripplanning.owl#platformNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#platformNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TrainSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#platformNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#postalCode
+<http://tripplanning/ontologies/tripplanning.owl#postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#price
+<http://tripplanning/ontologies/tripplanning.owl#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#rating
+<http://tripplanning/ontologies/tripplanning.owl#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#RideshareService> .
+<http://tripplanning/ontologies/tripplanning.owl#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+<http://tripplanning/ontologies/tripplanning.owl#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#status
+<http://tripplanning/ontologies/tripplanning.owl#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#street
+<http://tripplanning/ontologies/tripplanning.owl#street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#street> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#street> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#terminal
+<http://tripplanning/ontologies/tripplanning.owl#terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Airport> .
+<http://tripplanning/ontologies/tripplanning.owl#terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#FlightSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#terminal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#website
+<http://tripplanning/ontologies/tripplanning.owl#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://tripplanning/ontologies/tripplanning.owl#website> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+<http://tripplanning/ontologies/tripplanning.owl#website> <http://www.w3.org/2000/01/rdf-schema#domain> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+<http://tripplanning/ontologies/tripplanning.owl#website> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking
+<http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Airline
+<http://tripplanning/ontologies/tripplanning.owl#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#AirlineService
+<http://tripplanning/ontologies/tripplanning.owl#AirlineService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#AirlineService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Airport
+<http://tripplanning/ontologies/tripplanning.owl#Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BikeRentalService
+<http://tripplanning/ontologies/tripplanning.owl#BikeRentalService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BikeRentalService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#RentalService> .
+<http://tripplanning/ontologies/tripplanning.owl#BikeRentalService> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#CarRentalService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar
+<http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#RideshareService> .
+<http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#UberService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Booking
+<http://tripplanning/ontologies/tripplanning.owl#Booking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Booking> <http://www.w3.org/2000/01/rdf-schema#comment> "A reservation for a specific transportation service, accommodation, or other travel-related service for a particular date and time."@en .
+<http://tripplanning/ontologies/tripplanning.owl#Booking> <http://www.w3.org/2000/01/rdf-schema#label> "Booking"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Bus
+<http://tripplanning/ontologies/tripplanning.owl#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusBooking
+<http://tripplanning/ontologies/tripplanning.owl#BusBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusCompany
+<http://tripplanning/ontologies/tripplanning.owl#BusCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusRoute
+<http://tripplanning/ontologies/tripplanning.owl#BusRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusSegment
+<http://tripplanning/ontologies/tripplanning.owl#BusSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#BusSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#BusService> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesService> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#BusSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#Bus> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesMode> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusService
+<http://tripplanning/ontologies/tripplanning.owl#BusService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusStation
+<http://tripplanning/ontologies/tripplanning.owl#BusStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusinessTrip
+<http://tripplanning/ontologies/tripplanning.owl#BusinessTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#BusinessTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Car
+<http://tripplanning/ontologies/tripplanning.owl#Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CarRentalService
+<http://tripplanning/ontologies/tripplanning.owl#CarRentalService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CarRentalService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#RentalService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CarSegment
+<http://tripplanning/ontologies/tripplanning.owl#CarSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CarSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary
+<http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CityBus
+<http://tripplanning/ontologies/tripplanning.owl#CityBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CityBus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Bus> .
+<http://tripplanning/ontologies/tripplanning.owl#CityBus> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CityBusSegment
+<http://tripplanning/ontologies/tripplanning.owl#CityBusSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CityBusSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#BusSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#CityBusSegment> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CityBusService
+<http://tripplanning/ontologies/tripplanning.owl#CityBusService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CityBusService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#BusService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CommercialSite
+<http://tripplanning/ontologies/tripplanning.owl#CommercialSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CommercialSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Company
+<http://tripplanning/ontologies/tripplanning.owl#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#name> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Company> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization that provides transportation services, such as a railway company, bus operator, or airline"@en .
+<http://tripplanning/ontologies/tripplanning.owl#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment
+<http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#CycleSegment
+<http://tripplanning/ontologies/tripplanning.owl#CycleSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#CycleSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Cycling
+<http://tripplanning/ontologies/tripplanning.owl#Cycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Cycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HumanPowered> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#DirectItinerary
+<http://tripplanning/ontologies/tripplanning.owl#DirectItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#DirectItinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService
+<http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#AirlineService> .
+<http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Driver
+<http://tripplanning/ontologies/tripplanning.owl#Driver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Driver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FastestItinerary
+<http://tripplanning/ontologies/tripplanning.owl#FastestItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FastestItinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Ferry
+<http://tripplanning/ontologies/tripplanning.owl#Ferry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Ferry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FerryBooking
+<http://tripplanning/ontologies/tripplanning.owl#FerryBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FerryBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FerryCompany
+<http://tripplanning/ontologies/tripplanning.owl#FerryCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FerryCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FerryRoute
+<http://tripplanning/ontologies/tripplanning.owl#FerryRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FerryRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FerrySegment
+<http://tripplanning/ontologies/tripplanning.owl#FerrySegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FerrySegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FerryService
+<http://tripplanning/ontologies/tripplanning.owl#FerryService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FerryService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Flight
+<http://tripplanning/ontologies/tripplanning.owl#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FlightBooking
+<http://tripplanning/ontologies/tripplanning.owl#FlightBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FlightBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FlightRoute
+<http://tripplanning/ontologies/tripplanning.owl#FlightRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FlightRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FlightSegment
+<http://tripplanning/ontologies/tripplanning.owl#FlightSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FlightSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#FlightSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#AirlineService> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesService> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#FlightSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#Flight> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesMode> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#FlightSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#flightNumber> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#FlixbusService
+<http://tripplanning/ontologies/tripplanning.owl#FlixbusService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#FlixbusService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#BusService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#GolfCourse
+<http://tripplanning/ontologies/tripplanning.owl#GolfCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#GolfCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#RecreationSite> .
+<http://tripplanning/ontologies/tripplanning.owl#GolfCourse> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#Park> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain
+<http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Train> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService
+<http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TrainService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule
+<http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Schedule> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HomeLocation
+<http://tripplanning/ontologies/tripplanning.owl#HomeLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany
+<http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+<http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Hotel
+<http://tripplanning/ontologies/tripplanning.owl#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#CommercialSite> .
+<http://tripplanning/ontologies/tripplanning.owl#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Hotel> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#bookingFor> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Hotel> <http://www.w3.org/2002/07/owl#disjointWith> <http://tripplanning/ontologies/tripplanning.owl#Restaurant> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HotelBooking
+<http://tripplanning/ontologies/tripplanning.owl#HotelBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HotelChain
+<http://tripplanning/ontologies/tripplanning.owl#HotelChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelChain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HumanPowered
+<http://tripplanning/ontologies/tripplanning.owl#HumanPowered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HumanPowered> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportMode> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment
+<http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#InterCityBusService
+<http://tripplanning/ontologies/tripplanning.owl#InterCityBusService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#InterCityBusService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#BusService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#IntercityTrain
+<http://tripplanning/ontologies/tripplanning.owl#IntercityTrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#IntercityTrain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Train> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService
+<http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TrainService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService
+<http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#AirlineService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Itinerary
+<http://tripplanning/ontologies/tripplanning.owl#Itinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Itinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Itinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Itinerary> <http://www.w3.org/2000/01/rdf-schema#comment> "A complete plan of a trip, consisting of ordered trip segments that together form the journey from the origin to the destination."@en .
+<http://tripplanning/ontologies/tripplanning.owl#Itinerary> <http://www.w3.org/2000/01/rdf-schema#label> "Itinerary"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#LeisureTrip
+<http://tripplanning/ontologies/tripplanning.owl#LeisureTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#LeisureTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Location
+<http://tripplanning/ontologies/tripplanning.owl#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2001/XMLSchema#maxInclusive> "90.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2001/XMLSchema#minInclusive> "-90.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#latitude> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2001/XMLSchema#maxInclusive> "180.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#minInclusive> "-180.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#longitude> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#name> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A  area relevant to trip planning, such as a departure area, destination, or intermediate stop. Locations can be residential addresses, transportation hubs, or destination."@en .
+<http://tripplanning/ontologies/tripplanning.owl#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus
+<http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Bus> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment
+<http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#BusSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Metro
+<http://tripplanning/ontologies/tripplanning.owl#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Metro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#MetroRoute
+<http://tripplanning/ontologies/tripplanning.owl#MetroRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#MetroRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#MetroSegment
+<http://tripplanning/ontologies/tripplanning.owl#MetroSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#MetroSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#MetroService
+<http://tripplanning/ontologies/tripplanning.owl#MetroService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#MetroService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#MetroStation
+<http://tripplanning/ontologies/tripplanning.owl#MetroStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#MetroStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary
+<http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#OneWayTrip
+<http://tripplanning/ontologies/tripplanning.owl#OneWayTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#OneWayTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Park
+<http://tripplanning/ontologies/tripplanning.owl#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#RecreationSite> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Person
+<http://tripplanning/ontologies/tripplanning.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#name> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual who travels or uses transportation services. A person can be associated with bookings and trips"@en .
+<http://tripplanning/ontologies/tripplanning.owl#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Pilot
+<http://tripplanning/ontologies/tripplanning.owl#Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Pilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#PrivateSegment
+<http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#PrivateTransport
+<http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportMode> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#PublicSegment
+<http://tripplanning/ontologies/tripplanning.owl#PublicSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#PublicSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#PublicSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesService> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#PublicTransport
+<http://tripplanning/ontologies/tripplanning.owl#PublicTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#PublicTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportMode> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RecreationSite
+<http://tripplanning/ontologies/tripplanning.owl#RecreationSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RecreationSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RegionalTrain
+<http://tripplanning/ontologies/tripplanning.owl#RegionalTrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RegionalTrain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Train> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService
+<http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TrainService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RentalCar
+<http://tripplanning/ontologies/tripplanning.owl#RentalCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RentalCar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment
+<http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RentalCompany
+<http://tripplanning/ontologies/tripplanning.owl#RentalCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RentalCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RentalService
+<http://tripplanning/ontologies/tripplanning.owl#RentalService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RentalService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Restaurant
+<http://tripplanning/ontologies/tripplanning.owl#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#CommercialSite> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#ReturnTrip
+<http://tripplanning/ontologies/tripplanning.owl#ReturnTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#ReturnTrip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Trip> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Rideshare
+<http://tripplanning/ontologies/tripplanning.owl#Rideshare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Rideshare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RideshareBooking
+<http://tripplanning/ontologies/tripplanning.owl#RideshareBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RideshareBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RideshareCompany
+<http://tripplanning/ontologies/tripplanning.owl#RideshareCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RideshareCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RideshareSegment
+<http://tripplanning/ontologies/tripplanning.owl#RideshareSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RideshareSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#RideshareService
+<http://tripplanning/ontologies/tripplanning.owl#RideshareService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#RideshareService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Route
+<http://tripplanning/ontologies/tripplanning.owl#Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "A defined path between locations that is followed by a transportation service. Routes consist of a sequence of stops or waypoints."@en .
+<http://tripplanning/ontologies/tripplanning.owl#Route> <http://www.w3.org/2000/01/rdf-schema#label> "Route"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Schedule
+<http://tripplanning/ontologies/tripplanning.owl#Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasSchedule> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Schedule> <http://www.w3.org/2000/01/rdf-schema#comment> "The timetable for a transportation service, defining when it operates and at what times it reaches various stops or stations"@en .
+<http://tripplanning/ontologies/tripplanning.owl#Schedule> <http://www.w3.org/2000/01/rdf-schema#label> "Schedule"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Scooter
+<http://tripplanning/ontologies/tripplanning.owl#Scooter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Scooter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HumanPowered> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#ScooterSegment
+<http://tripplanning/ontologies/tripplanning.owl#ScooterSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#ScooterSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Taxi
+<http://tripplanning/ontologies/tripplanning.owl#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Taxi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TaxiSegment
+<http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Train
+<http://tripplanning/ontologies/tripplanning.owl#Train> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Train> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainBooking
+<http://tripplanning/ontologies/tripplanning.owl#TrainBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainCompany
+<http://tripplanning/ontologies/tripplanning.owl#TrainCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainRoute
+<http://tripplanning/ontologies/tripplanning.owl#TrainRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainSegment
+<http://tripplanning/ontologies/tripplanning.owl#TrainSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#TrainService> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesService> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#Train> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesMode> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainService
+<http://tripplanning/ontologies/tripplanning.owl#TrainService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainStation
+<http://tripplanning/ontologies/tripplanning.owl#TrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Tram
+<http://tripplanning/ontologies/tripplanning.owl#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Tram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TramCompany
+<http://tripplanning/ontologies/tripplanning.owl#TramCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TramCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportCompany> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TramRoute
+<http://tripplanning/ontologies/tripplanning.owl#TramRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TramRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Route> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TramSegment
+<http://tripplanning/ontologies/tripplanning.owl#TramSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TramSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TramService
+<http://tripplanning/ontologies/tripplanning.owl#TramService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TramService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TramStop
+<http://tripplanning/ontologies/tripplanning.owl#TramStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TramStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TransportBooking
+<http://tripplanning/ontologies/tripplanning.owl#TransportBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportBooking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#bookingFor> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TransportCompany
+<http://tripplanning/ontologies/tripplanning.owl#TransportCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#TransportService> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#operatedBy> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TransportHub
+<http://tripplanning/ontologies/tripplanning.owl#TransportHub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportHub> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportHub> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#connectsWith> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TransportMode
+<http://tripplanning/ontologies/tripplanning.owl#TransportMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportMode> <http://www.w3.org/2000/01/rdf-schema#comment> "The method of transportation used for a trip segment, such as train, bus, car, or walking"@en .
+<http://tripplanning/ontologies/tripplanning.owl#TransportMode> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation Mode"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TransportService
+<http://tripplanning/ontologies/tripplanning.owl#TransportService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#serves> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Company> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#operatedBy> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TransportService> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific service provided by a transportation company, such as a train line, bus route, or flight route"@en .
+<http://tripplanning/ontologies/tripplanning.owl#TransportService> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation Service"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Traveler
+<http://tripplanning/ontologies/tripplanning.owl#Traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Traveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+<http://tripplanning/ontologies/tripplanning.owl#Traveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#Booking> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#madeBy> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Trip
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Itinerary> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasPlan> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasStart> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#departTime> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#duration> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "A journey from one location to another, consisting of one or more segments using various modes of transportation. A trip has a defined start point, end point, and follows an itinerary."@en .
+<http://tripplanning/ontologies/tripplanning.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TripSegment
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#Location> .
+_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#hasStart> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#onClass> <http://tripplanning/ontologies/tripplanning.owl#TransportMode> .
+_:genid45 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#usesMode> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#departTime> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#distance> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#duration> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "A single portion of a trip using one specific mode of transportation between two locations. Multiple trip segments form a complete itinerary"@en .
+<http://tripplanning/ontologies/tripplanning.owl#TripSegment> <http://www.w3.org/2000/01/rdf-schema#label> "Trip Segment"@en .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#UberService
+<http://tripplanning/ontologies/tripplanning.owl#UberService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#UberService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#RideshareService> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#WaitingSegment
+<http://tripplanning/ontologies/tripplanning.owl#WaitingSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#WaitingSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#TripSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#WalkSegment
+<http://tripplanning/ontologies/tripplanning.owl#WalkSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#WalkSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Walking
+<http://tripplanning/ontologies/tripplanning.owl#Walking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#Walking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#HumanPowered> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule
+<http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Schedule> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule
+<http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://tripplanning/ontologies/tripplanning.owl#Schedule> .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://tripplanning/ontologies/tripplanning.owl#Person> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#madeBy> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://tripplanning/ontologies/tripplanning.owl#bookingFor> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a platform build for ontologies used in planning trips"@en .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "TripPlanning"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#GolfCourse> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> <http://tripplanning/ontologies/tripplanning.owl#latitude> "44.8742"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> <http://tripplanning/ontologies/tripplanning.owl#longitude> "-0.5935"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> <http://tripplanning/ontologies/tripplanning.owl#name> "Golf Bluegreen Bordeaux" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#HotelBooking> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking> <http://tripplanning/ontologies/tripplanning.owl#bookingFor> <http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking> <http://tripplanning/ontologies/tripplanning.owl#madeBy> <http://tripplanning/ontologies/tripplanning.owl#TripTraveler> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking> <http://tripplanning/ontologies/tripplanning.owl#currency> "EUR" .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking> <http://tripplanning/ontologies/tripplanning.owl#price> "420.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#Hotel> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#city> "Bordeaux" .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#country> "France" .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#latitude> "44.8448"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#longitude> "-0.5783"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#name> "Mercure Bordeaux Centre" .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#postalCode> "33000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#rating> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> <http://tripplanning/ontologies/tripplanning.owl#street> "5 Rue Robert Lateulade" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BordeauxStation
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> <http://tripplanning/ontologies/tripplanning.owl#latitude> "44.8263"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> <http://tripplanning/ontologies/tripplanning.owl#longitude> "-0.5563"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> <http://tripplanning/ontologies/tripplanning.owl#name> "Gare de Bordeaux-Saint-Jean" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route
+<http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#BusRoute> .
+<http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#HomeStation> .
+<http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> .
+<http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route> <http://tripplanning/ontologies/tripplanning.owl#name> "M6" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#WalkSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#Walking> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T07:20:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T07:15:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT5M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusTicket
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#BusBooking> .
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://tripplanning/ontologies/tripplanning.owl#bookingFor> <http://tripplanning/ontologies/tripplanning.owl#LocalBus> .
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://tripplanning/ontologies/tripplanning.owl#madeBy> <http://tripplanning/ontologies/tripplanning.owl#TripTraveler> .
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://tripplanning/ontologies/tripplanning.owl#currency> "EUR" .
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://tripplanning/ontologies/tripplanning.owl#name> "Single Journey" .
+<http://tripplanning/ontologies/tripplanning.owl#BusTicket> <http://tripplanning/ontologies/tripplanning.owl#price> "1.50"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#CityBusSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#HomeStation> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#usesService> <http://tripplanning/ontologies/tripplanning.owl#LocalBus> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T07:15:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T06:55:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "3.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT20M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV
+<http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#Train> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HomeStation
+<http://tripplanning/ontologies/tripplanning.owl#HomeStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#BusStation> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeStation> <http://tripplanning/ontologies/tripplanning.owl#latitude> "45.4395"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeStation> <http://tripplanning/ontologies/tripplanning.owl#longitude> "4.3869"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeStation> <http://tripplanning/ontologies/tripplanning.owl#name> "Rue Pierre et Dominique Ponchardier" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#WalkSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#HomeStation> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#Walking> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T06:50:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T06:45:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "0.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT5M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#LocalTaxi> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T07:20:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T07:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "3.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT20M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#LocalTaxi> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-21T09:30:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-21T09:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "15.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT30M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#LocalBus
+<http://tripplanning/ontologies/tripplanning.owl#LocalBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#LocalBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#BusService> .
+<http://tripplanning/ontologies/tripplanning.owl#LocalBus> <http://tripplanning/ontologies/tripplanning.owl#operatedBy> <http://tripplanning/ontologies/tripplanning.owl#STAS> .
+<http://tripplanning/ontologies/tripplanning.owl#LocalBus> <http://tripplanning/ontologies/tripplanning.owl#name> "Saint-Etienne Public Bus" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#LocalTaxi
+<http://tripplanning/ontologies/tripplanning.owl#LocalTaxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#LocalTaxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation
+<http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation> <http://tripplanning/ontologies/tripplanning.owl#latitude> "45.7605"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation> <http://tripplanning/ontologies/tripplanning.owl#longitude> "4.8591"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation> <http://tripplanning/ontologies/tripplanning.owl#name> "Lyon Part-Dieu" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation
+<http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation> <http://tripplanning/ontologies/tripplanning.owl#latitude> "43.6043"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation> <http://tripplanning/ontologies/tripplanning.owl#longitude> "3.8816"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation> <http://tripplanning/ontologies/tripplanning.owl#name> "Montpellier Saint-Roch" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SNCF
+<http://tripplanning/ontologies/tripplanning.owl#SNCF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SNCF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainCompany> .
+<http://tripplanning/ontologies/tripplanning.owl#SNCF> <http://tripplanning/ontologies/tripplanning.owl#name> "SNCF" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#STAS
+<http://tripplanning/ontologies/tripplanning.owl#STAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#STAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#BusCompany> .
+<http://tripplanning/ontologies/tripplanning.owl#STAS> <http://tripplanning/ontologies/tripplanning.owl#name> "STAS" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SaintEtienne
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#HomeLocation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> <http://tripplanning/ontologies/tripplanning.owl#latitude> "45.4397"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> <http://tripplanning/ontologies/tripplanning.owl#longitude> "4.3872"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> <http://tripplanning/ontologies/tripplanning.owl#name> "29 rue Ponchardier" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> <http://tripplanning/ontologies/tripplanning.owl#latitude> "45.4411"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> <http://tripplanning/ontologies/tripplanning.owl#longitude> "4.3972"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> <http://tripplanning/ontologies/tripplanning.owl#name> "Gare de Saint-Étienne-Châteaucreux" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#OneWayTrip> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://tripplanning/ontologies/tripplanning.owl#hasPlan> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienne> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T14:30:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T06:45:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT7H45M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary> <http://tripplanning/ontologies/tripplanning.owl#hasSegment> <http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainRoute> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#hasStop> <http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#code> "TGV-STE-BDX" .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> <http://tripplanning/ontologies/tripplanning.owl#name> "Saint-Etienne to Bordeaux via Lyon" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#usesService> <http://tripplanning/ontologies/tripplanning.owl#TGV6578> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T13:45:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T08:15:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "550.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT5H30M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus
+<http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#CityBus> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#LocalTaxi> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T14:30:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T14:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "12.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT30M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#hasEnd> <http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#hasStart> <http://tripplanning/ontologies/tripplanning.owl#BordeauxStation> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#usesMode> <http://tripplanning/ontologies/tripplanning.owl#LocalTaxi> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#arriveTime> "2025-04-20T14:10:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#departTime> "2025-04-20T13:50:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#distance> "3.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment> <http://tripplanning/ontologies/tripplanning.owl#duration> "PT20M" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule
+<http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TGV6578
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainService> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578> <http://tripplanning/ontologies/tripplanning.owl#followsRoute> <http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578> <http://tripplanning/ontologies/tripplanning.owl#operatedBy> <http://tripplanning/ontologies/tripplanning.owl#SNCF> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578> <http://tripplanning/ontologies/tripplanning.owl#name> "TGV 6578 Saint-Etienne to Bordeaux" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule> <http://tripplanning/ontologies/tripplanning.owl#hasSchedule> <http://tripplanning/ontologies/tripplanning.owl#TGV6578> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule
+<http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainBooking
+<http://tripplanning/ontologies/tripplanning.owl#TrainBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TransportBooking> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainBooking> <http://tripplanning/ontologies/tripplanning.owl#bookingFor> <http://tripplanning/ontologies/tripplanning.owl#TGV6578> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainBooking> <http://tripplanning/ontologies/tripplanning.owl#madeBy> <http://tripplanning/ontologies/tripplanning.owl#TripTraveler> .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop
+<http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#BusStation> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> <http://tripplanning/ontologies/tripplanning.owl#latitude> "45.4410"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> <http://tripplanning/ontologies/tripplanning.owl#longitude> "4.3968"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop> <http://tripplanning/ontologies/tripplanning.owl#name> "Gare Châteaucreux Bus Terminal" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#TripTraveler
+<http://tripplanning/ontologies/tripplanning.owl#TripTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#TripTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#Traveler> .
+<http://tripplanning/ontologies/tripplanning.owl#TripTraveler> <http://tripplanning/ontologies/tripplanning.owl#name> "sajid" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation
+<http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#TrainStation> .
+<http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation> <http://tripplanning/ontologies/tripplanning.owl#latitude> "44.9908"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation> <http://tripplanning/ontologies/tripplanning.owl#longitude> "4.9753"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation> <http://tripplanning/ontologies/tripplanning.owl#name> "Valence TGV" .
+# 
+# http://tripplanning/ontologies/tripplanning.owl#Walking
+<http://tripplanning/ontologies/tripplanning.owl#Walking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://tripplanning/ontologies/tripplanning.owl#Walking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tripplanning/ontologies/tripplanning.owl#Walking> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid52 <http://www.w3.org/2002/07/owl#members> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TramCompany> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TrainCompany> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RideshareCompany> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RentalCompany> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FerryCompany> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusCompany> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Airline> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid60 <http://www.w3.org/2002/07/owl#members> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TramService> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TrainService> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RideshareService> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RentalService> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#MetroService> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FerryService> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusService> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#AirlineService> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid69 <http://www.w3.org/2002/07/owl#members> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TramStop> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TrainStation> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#MetroStation> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusStation> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Airport> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid75 <http://www.w3.org/2002/07/owl#members> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TrainBooking> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RideshareBooking> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FlightBooking> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FerryBooking> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusBooking> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid81 <http://www.w3.org/2002/07/owl#members> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TramRoute> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TrainRoute> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#MetroRoute> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FlightRoute> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FerryRoute> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusRoute> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid88 <http://www.w3.org/2002/07/owl#members> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TramSegment> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TrainSegment> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#MetroSegment> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FlightSegment> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FerrySegment> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusSegment> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid95 <http://www.w3.org/2002/07/owl#members> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#ReturnTrip> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#OneWayTrip> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#LeisureTrip> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#BusinessTrip> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid100 <http://www.w3.org/2002/07/owl#members> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Taxi> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Rideshare> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RentalCar> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Car> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid105 <http://www.w3.org/2002/07/owl#members> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TaxiSegment> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RideshareSegment> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#CarSegment> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid110 <http://www.w3.org/2002/07/owl#members> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FastestItinerary> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#DirectItinerary> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid115 <http://www.w3.org/2002/07/owl#members> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#InterCityBusService> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#FlixbusService> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#CityBusService> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid119 <http://www.w3.org/2002/07/owl#members> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#TransportHub> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RecreationSite> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#HomeLocation> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#CommercialSite> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid124 <http://www.w3.org/2002/07/owl#members> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#WaitingSegment> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#PublicSegment> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#PrivateSegment> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid130 <http://www.w3.org/2002/07/owl#members> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#WalkSegment> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#ScooterSegment> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#CycleSegment> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid134 <http://www.w3.org/2002/07/owl#members> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Walking> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Scooter> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Cycling> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid138 <http://www.w3.org/2002/07/owl#members> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Traveler> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Pilot> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#Driver> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid142 <http://www.w3.org/2002/07/owl#members> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RegionalTrain> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#IntercityTrain> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid146 <http://www.w3.org/2002/07/owl#members> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid150 <http://www.w3.org/2002/07/owl#members> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid154 <http://www.w3.org/2002/07/owl#members> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#PublicTransport> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#PrivateTransport> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://tripplanning/ontologies/tripplanning.owl#HumanPowered> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

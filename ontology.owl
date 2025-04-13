@@ -1,0 +1,2644 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://tripplanning/ontologies/tripplanning.owl#"
+     xml:base="http://tripplanning/ontologies/tripplanning.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tripplanning="http://tripplanning/ontologies/tripplanning.owl#">
+    <owl:Ontology rdf:about="http://tripplanning/ontologies/tripplanning.owl">
+        <rdfs:comment xml:lang="en">This is a platform build for ontologies used in planning trips</rdfs:comment>
+        <rdfs:label xml:lang="en">This is trip planning ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#bookingFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#bookingFor">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#connectsWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#connectsWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#followsRoute -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#followsRoute">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasAlternative -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasAlternative">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportMode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasDropoff -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasDropoff">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RideshareSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasEnd -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasEnd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasLastSegment -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasLastSegment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasPickup -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasPickup">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RideshareSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasPlan -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasPlan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasSchedule -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasSchedule">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Schedule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasSegment -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasSegment">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasStart -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasStart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#hasStop -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#hasStop">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#locatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#madeBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#madeBy">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#nextSegment -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#nextSegment">
+        <owl:inverseOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#previousSegment"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#operatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#operatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#previousSegment -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#previousSegment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#serves -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#serves">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#usesMode -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#usesMode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportMode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#usesService -->
+
+
+    <owl:ObjectProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#usesService">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+        <rdfs:range rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#arriveTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#arriveTime">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#city -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#city">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#code -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#code">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#country -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#country">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#currency -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#currency">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#departTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#departTime">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#distance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#distance">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#duration">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#email">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#flightNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#flightNumber">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#FlightSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#gate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#gate">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#FlightSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#latitude -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#latitude">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#longitude -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#longitude">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#maxBaggage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#maxBaggage">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#name">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#phoneNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#phoneNumber">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#platformNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#platformNumber">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#postalCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#postalCode">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#price -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#price">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#rating">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RideshareService"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#status -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#status">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#street -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#street">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#terminal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#terminal">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Airport"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#FlightSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#website -->
+
+
+    <owl:DatatypeProperty rdf:about="http://tripplanning/ontologies/tripplanning.owl#website">
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+        <rdfs:domain rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Airline -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Airline">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#AirlineService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#AirlineService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Airport -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Airport">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BikeRentalService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BikeRentalService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RentalService"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#CarRentalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RideshareService"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#UberService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Booking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Booking">
+        <rdfs:comment xml:lang="en">A reservation for a specific transportation service, accommodation, or other travel-related service for a particular date and time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Booking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Bus -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Bus">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusRoute -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusRoute">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesService"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesMode"/>
+                <owl:allValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Bus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusStation -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusStation">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusinessTrip -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusinessTrip">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Car -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Car">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CarRentalService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CarRentalService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RentalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CarSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CarSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CityBus -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CityBus">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Bus"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CityBusSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CityBusSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusSegment"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CityBusService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CityBusService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CommercialSite -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CommercialSite">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Company -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Company">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An organization that provides transportation services, such as a railway company, bus operator, or airline</rdfs:comment>
+        <rdfs:label xml:lang="en">Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#CycleSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#CycleSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Cycling -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Cycling">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HumanPowered"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#DirectItinerary -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#DirectItinerary">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#AirlineService"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Driver -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Driver">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FastestItinerary -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FastestItinerary">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Ferry -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Ferry">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FerryBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FerryCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FerryRoute -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryRoute">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FerrySegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerrySegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FerryService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Flight -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Flight">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FlightBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlightBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FlightRoute -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlightRoute">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FlightSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlightSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesService"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#AirlineService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesMode"/>
+                <owl:allValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Flight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#flightNumber"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#FlixbusService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlixbusService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#GolfCourse -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#GolfCourse">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RecreationSite"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Park"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Schedule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HomeLocation -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HomeLocation">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Hotel -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Hotel">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#CommercialSite"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#bookingFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Hotel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HotelBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HotelBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HotelChain -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HotelChain">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HumanPowered -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HumanPowered">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#InterCityBusService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#InterCityBusService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#IntercityTrain -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#IntercityTrain">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#AirlineService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Itinerary -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Itinerary">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasSegment"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasSegment"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A complete plan of a trip, consisting of ordered trip segments that together form the journey from the origin to the destination.</rdfs:comment>
+        <rdfs:label xml:lang="en">Itinerary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#LeisureTrip -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#LeisureTrip">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Location -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Location">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#latitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-90.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#longitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-180.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A  area relevant to trip planning, such as a departure area, destination, or intermediate stop. Locations can be residential addresses, transportation hubs, or destination.</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Metro -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Metro">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#MetroRoute -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroRoute">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#MetroSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#MetroService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#MetroStation -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroStation">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#OneWayTrip -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#OneWayTrip">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Park -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Park">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RecreationSite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Person -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An individual who travels or uses transportation services. A person can be associated with bookings and trips</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Pilot -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Pilot">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#PrivateSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#PrivateSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#PrivateTransport -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#PublicSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#PublicSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesService"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#PublicTransport -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#PublicTransport">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RecreationSite -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RecreationSite">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RegionalTrain -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RegionalTrain">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RentalCar -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalCar">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RentalCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RentalService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Restaurant -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#CommercialSite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#ReturnTrip -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#ReturnTrip">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Rideshare -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Rideshare">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RideshareBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RideshareCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RideshareSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#RideshareService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Route -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Route">
+        <rdfs:comment xml:lang="en">A defined path between locations that is followed by a transportation service. Routes consist of a sequence of stops or waypoints.</rdfs:comment>
+        <rdfs:label xml:lang="en">Route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Schedule -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Schedule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasSchedule"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+                            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The timetable for a transportation service, defining when it operates and at what times it reaches various stops or stations</rdfs:comment>
+        <rdfs:label xml:lang="en">Schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Scooter -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Scooter">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HumanPowered"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#ScooterSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#ScooterSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Taxi -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Taxi">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TaxiSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TaxiSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Train -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Train">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainRoute -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainRoute">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesService"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesMode"/>
+                <owl:allValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Train"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainStation -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainStation">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Tram -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Tram">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TramCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TramRoute -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramRoute">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TramSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TramService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TramStop -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramStop">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TransportBooking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportBooking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#bookingFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TransportCompany -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportCompany">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#operatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TransportHub -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportHub">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#connectsWith"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TransportMode -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportMode">
+        <rdfs:comment xml:lang="en">The method of transportation used for a trip segment, such as train, bus, car, or walking</rdfs:comment>
+        <rdfs:label xml:lang="en">Transportation Mode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TransportService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportService">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#serves"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#operatedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A specific service provided by a transportation company, such as a train line, bus route, or flight route</rdfs:comment>
+        <rdfs:label xml:lang="en">Transportation Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Traveler -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Traveler">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#madeBy"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Booking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Trip -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Trip">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasEnd"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasPlan"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Itinerary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasStart"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#arriveTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#departTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#duration"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A journey from one location to another, consisting of one or more segments using various modes of transportation. A trip has a defined start point, end point, and follows an itinerary.</rdfs:comment>
+        <rdfs:label xml:lang="en">Trip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TripSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#TripSegment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasEnd"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#hasStart"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#usesMode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportMode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#arriveTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#departTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#distance"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#duration"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A single portion of a trip using one specific mode of transportation between two locations. Multiple trip segments form a complete itinerary</rdfs:comment>
+        <rdfs:label xml:lang="en">Trip Segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#UberService -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#UberService">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#RideshareService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#WaitingSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#WaitingSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#WalkSegment -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#WalkSegment">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Walking -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#Walking">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HumanPowered"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Schedule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule -->
+
+
+    <owl:Class rdf:about="http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule">
+        <rdfs:subClassOf rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Schedule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#madeBy"/>
+                <owl:someValuesFrom rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tripplanning/ontologies/tripplanning.owl#bookingFor"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This is a platform build for ontologies used in planning trips</rdfs:comment>
+        <rdfs:label xml:lang="en">TripPlanning</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#GolfCourse"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.8742</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5935</longitude>
+        <name>Golf Bluegreen Bordeaux</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HotelBooking"/>
+        <bookingFor rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure"/>
+        <madeBy rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripTraveler"/>
+        <currency>EUR</currency>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">420.00</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Hotel"/>
+        <city>Bordeaux</city>
+        <country>France</country>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.8448</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5783</longitude>
+        <name>Mercure Bordeaux Centre</name>
+        <postalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33000</postalCode>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</rating>
+        <street>5 Rue Robert Lateulade</street>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BordeauxStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BordeauxStation">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.8263</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5563</longitude>
+        <name>Gare de Bordeaux-Saint-Jean</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusRoute"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HomeStation"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop"/>
+        <name>M6</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#WalkSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Walking"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T07:20:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T07:15:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</distance>
+        <duration>PT5M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusTicket -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusTicket">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusBooking"/>
+        <bookingFor rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LocalBus"/>
+        <madeBy rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripTraveler"/>
+        <currency>EUR</currency>
+        <name>Single Journey</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.50</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#CityBusSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HomeStation"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus"/>
+        <usesService rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LocalBus"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T07:15:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T06:55:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</distance>
+        <duration>PT20M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Train"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HomeStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#HomeStation">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.4395</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3869</longitude>
+        <name>Rue Pierre et Dominique Ponchardier</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#WalkSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HomeStation"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienne"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Walking"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T06:50:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T06:45:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</distance>
+        <duration>PT5M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienne"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T07:20:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T07:00:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</distance>
+        <duration>PT20M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-21T09:30:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-21T09:00:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</distance>
+        <duration>PT30M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#LocalBus -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#LocalBus">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusService"/>
+        <operatedBy rdf:resource="http://tripplanning/ontologies/tripplanning.owl#STAS"/>
+        <name>Saint-Etienne Public Bus</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#LocalTaxi -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#LocalTaxi">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.7605</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8591</longitude>
+        <name>Lyon Part-Dieu</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.6043</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8816</longitude>
+        <name>Montpellier Saint-Roch</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SNCF -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SNCF">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainCompany"/>
+        <name>SNCF</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#STAS -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#STAS">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusCompany"/>
+        <name>STAS</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SaintEtienne -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SaintEtienne">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HomeLocation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.4397</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3872</longitude>
+        <name>29 rue Ponchardier</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.4411</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3972</longitude>
+        <name>Gare de Saint-Étienne-Châteaucreux</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#OneWayTrip"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen"/>
+        <hasPlan rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienne"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T14:30:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T06:45:00</departTime>
+        <duration>PT7H45M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary"/>
+        <hasSegment rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment"/>
+        <hasSegment rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment"/>
+        <hasSegment rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment"/>
+        <hasSegment rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment"/>
+        <hasSegment rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment"/>
+        <hasSegment rdf:resource="http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainRoute"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"/>
+        <hasStop rdf:resource="http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation"/>
+        <code>TGV-STE-BDX</code>
+        <name>Saint-Etienne to Bordeaux via Lyon</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV"/>
+        <usesService rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TGV6578"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T13:45:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T08:15:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">550.0</distance>
+        <duration>PT5H30M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#CityBus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T14:30:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T14:00:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</distance>
+        <duration>PT30M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"/>
+        <hasEnd rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure"/>
+        <hasStart rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BordeauxStation"/>
+        <usesMode rdf:resource="http://tripplanning/ontologies/tripplanning.owl#LocalTaxi"/>
+        <arriveTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T14:10:00</arriveTime>
+        <departTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T13:50:00</departTime>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</distance>
+        <duration>PT20M</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TGV6578 -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TGV6578">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainService"/>
+        <followsRoute rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute"/>
+        <operatedBy rdf:resource="http://tripplanning/ontologies/tripplanning.owl#SNCF"/>
+        <name>TGV 6578 Saint-Etienne to Bordeaux</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule"/>
+        <hasSchedule rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TGV6578"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainBooking -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainBooking">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TransportBooking"/>
+        <bookingFor rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TGV6578"/>
+        <madeBy rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TripTraveler"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#BusStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.4410</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3968</longitude>
+        <name>Gare Châteaucreux Bus Terminal</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#TripTraveler -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#TripTraveler">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Traveler"/>
+        <name>sajid</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#TrainStation"/>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.9908</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9753</longitude>
+        <name>Valence TGV</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tripplanning/ontologies/tripplanning.owl#Walking -->
+
+
+    <owl:NamedIndividual rdf:about="http://tripplanning/ontologies/tripplanning.owl#Walking">
+        <rdf:type rdf:resource="http://tripplanning/ontologies/tripplanning.owl#Walking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Airline"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusCompany"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryCompany"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalCompany"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareCompany"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainCompany"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramCompany"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#AirlineService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramService"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Airport"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusStation"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroStation"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainStation"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramStop"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusBooking"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryBooking"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlightBooking"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareBooking"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainBooking"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusRoute"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerryRoute"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlightRoute"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroRoute"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainRoute"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramRoute"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FerrySegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlightSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#MetroSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TrainSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TramSegment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#BusinessTrip"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#LeisureTrip"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#OneWayTrip"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#ReturnTrip"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Car"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalCar"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Rideshare"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Taxi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#CarSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RideshareSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TaxiSegment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#DirectItinerary"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FastestItinerary"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#CityBusService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#FlixbusService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#InterCityBusService"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#CommercialSite"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#HomeLocation"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RecreationSite"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#TransportHub"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#PrivateSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#PublicSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#WaitingSegment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#CycleSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#ScooterSegment"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#WalkSegment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Cycling"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Scooter"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Walking"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Driver"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Pilot"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#Traveler"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#IntercityTrain"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RegionalTrain"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#HumanPowered"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#PrivateTransport"/>
+            <rdf:Description rdf:about="http://tripplanning/ontologies/tripplanning.owl#PublicTransport"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

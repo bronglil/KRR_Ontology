@@ -1,0 +1,5214 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://tripplanning/ontologies/tripplanning.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "labels" : {
+      "en" : "This is trip planning ontology"
+    },
+    "comments" : {
+      "en" : "This is a platform build for ontologies used in planning trips"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "319",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "352",
+    "type" : "owl:Class"
+  }, {
+    "id" : "230",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "342",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "257",
+    "type" : "owl:Class"
+  }, {
+    "id" : "216",
+    "type" : "owl:Class"
+  }, {
+    "id" : "344",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "401",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "222",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "346",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "250",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "241",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "197",
+    "type" : "owl:Class"
+  }, {
+    "id" : "378",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:Class"
+  }, {
+    "id" : "368",
+    "type" : "owl:Class"
+  }, {
+    "id" : "206",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "336",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "354",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "243",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "260",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "335",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "419",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "400",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "357",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "440",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "398",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "430",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "441",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "424",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "435",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "437",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "421",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "245",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "267",
+    "type" : "owl:Class"
+  }, {
+    "id" : "247",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "254",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "240",
+    "type" : "owl:Class"
+  }, {
+    "id" : "268",
+    "type" : "owl:Class"
+  }, {
+    "id" : "156",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "375",
+    "type" : "owl:Class"
+  }, {
+    "id" : "390",
+    "type" : "owl:Class"
+  }, {
+    "id" : "219",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Schedule",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Schedule",
+      "en" : "Schedule"
+    },
+    "subClasses" : [ "38", "39", "40" ],
+    "comment" : {
+      "en" : "The timetable for a transportation service, defining when it operates and at what times it reaches various stops or stations"
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BlaBlaCar",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BlaBlaCar"
+    },
+    "id" : "42",
+    "superClasses" : [ "43" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "58", "46" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Metro",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metro"
+    },
+    "id" : "59",
+    "superClasses" : [ "60" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "63", "46" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "62"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Airport",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airport"
+    },
+    "id" : "68",
+    "superClasses" : [ "69" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "58", "72" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Company",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company",
+      "en" : "Company"
+    },
+    "subClasses" : [ "81", "45" ],
+    "comment" : {
+      "en" : "An organization that provides transportation services, such as a railway company, bus operator, or airline"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CommercialSite",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommercialSite"
+    },
+    "subClasses" : [ "49", "53" ],
+    "id" : "50",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainSegment"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxTrainSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SaintEtienneToBordeauxTrainSegment"
+      }
+    } ],
+    "id" : "33",
+    "superClasses" : [ "21" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "63", "46" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "88"
+  }, {
+    "instances" : 0,
+    "union" : [ "43", "81" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HotelBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelBooking"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelBooking",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BordeauxHotelBooking"
+      }
+    } ],
+    "id" : "91",
+    "superClasses" : [ "92" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "93"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "84"
+  }, {
+    "instances" : 0,
+    "union" : [ "86", "63", "58", "72", "46" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "98"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "101"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "104"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "108" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "107"
+  }, {
+    "instances" : 0,
+    "union" : [ "68", "112" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "111"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "108" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "113"
+  }, {
+    "instances" : 0,
+    "union" : [ "58", "72", "108" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Trip",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip",
+      "en" : "Trip"
+    },
+    "subClasses" : [ "4", "10", "13", "16" ],
+    "comment" : {
+      "en" : "A journey from one location to another, consisting of one or more segments using various modes of transportation. A trip has a defined start point, end point, and follows an itinerary."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#IntercityTrain",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntercityTrain"
+    },
+    "id" : "151",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CheapestItinerary",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CheapestItinerary"
+    },
+    "id" : "152",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Scooter",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scooter"
+    },
+    "id" : "161",
+    "superClasses" : [ "160" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TaxiSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TaxiSegment"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#HotelToGolfSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "HotelToGolfSegment"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#StationToHotelSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "StationToHotelSegment"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#HomeToStationSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "HomeToStationSegment"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#StationToGolfSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "StationToGolfSegment"
+      }
+    } ],
+    "id" : "28",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RideshareCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RideshareCompany"
+    },
+    "id" : "147",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TripSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripSegment",
+      "en" : "Trip Segment"
+    },
+    "subClasses" : [ "21", "26", "30", "167", "170" ],
+    "comment" : {
+      "en" : "A single portion of a trip using one specific mode of transportation between two locations. Multiple trip segments form a complete itinerary"
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Park",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park"
+    },
+    "id" : "176",
+    "superClasses" : [ "177" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RentalService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RentalService"
+    },
+    "subClasses" : [ "204", "205" ],
+    "id" : "100",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Airline",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline"
+    },
+    "id" : "129",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TransportBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "TransportBooking"
+    },
+    "subClasses" : [ "206", "207", "150", "208", "209" ],
+    "id" : "149",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#ScooterSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScooterSegment"
+    },
+    "id" : "179",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#IntercityTrainService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntercityTrainService"
+    },
+    "id" : "225",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Rideshare",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rideshare"
+    },
+    "id" : "8",
+    "superClasses" : [ "197" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#AirlineService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AirlineService"
+    },
+    "subClasses" : [ "190", "189" ],
+    "id" : "95",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Traveler",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Traveler"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#TripTraveler",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "TripTraveler"
+      }
+    } ],
+    "id" : "163",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RentalCar",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RentalCar"
+    },
+    "id" : "7",
+    "superClasses" : [ "197" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#MetroService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetroService"
+    },
+    "id" : "106",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#DomesticFlightService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomesticFlightService"
+    },
+    "id" : "189",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Hotel",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxHotelMercure",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BordeauxHotelMercure"
+      }
+    } ],
+    "id" : "49",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusSegment"
+    },
+    "subClasses" : [ "243", "247" ],
+    "id" : "65",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RideshareService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RideshareService"
+    },
+    "subClasses" : [ "250", "42" ],
+    "id" : "43",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RecreationSite",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecreationSite"
+    },
+    "subClasses" : [ "176", "230" ],
+    "id" : "177",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#LeisureTrip",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeisureTrip"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Person",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "subClasses" : [ "157", "163", "156" ],
+    "comment" : {
+      "en" : "An individual who travels or uses transportation services. A person can be associated with bookings and trips"
+    },
+    "id" : "63"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FlightSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightSegment"
+    },
+    "id" : "112",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Cycling",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cycling"
+    },
+    "id" : "159",
+    "superClasses" : [ "160" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#MetroRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetroRoute"
+    },
+    "id" : "319",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#WeekdaySchedule",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WeekdaySchedule"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578Schedule",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "TGV6578Schedule"
+      }
+    } ],
+    "id" : "39",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Ferry",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ferry"
+    },
+    "id" : "154",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RegionalTrainService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalTrainService"
+    },
+    "id" : "352",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#GolfCourse",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GolfCourse"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxBluegreen",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BordeauxBluegreen"
+      }
+    } ],
+    "id" : "230",
+    "superClasses" : [ "177" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TransportHub",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportHub"
+    },
+    "subClasses" : [ "68", "213", "216", "219", "222" ],
+    "id" : "69",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrain",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighSpeedTrain"
+    },
+    "id" : "342",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TransportMode",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportMode",
+      "en" : "Transportation Mode"
+    },
+    "subClasses" : [ "160", "60", "197" ],
+    "comment" : {
+      "en" : "The method of transportation used for a trip segment, such as train, bus, car, or walking"
+    },
+    "id" : "194"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#PrivateSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrivateSegment"
+    },
+    "subClasses" : [ "24", "28", "18", "19" ],
+    "id" : "167",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Location",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "subClasses" : [ "69", "50", "185", "177" ],
+    "comment" : {
+      "en" : "A  area relevant to trip planning, such as a departure area, destination, or intermediate stop. Locations can be residential addresses, transportation hubs, or destination."
+    },
+    "id" : "86"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#MultiModalItinerary",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiModalItinerary"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxItinerary",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SaintEtienneToBordeauxItinerary"
+      }
+    } ],
+    "id" : "257",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusStation",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusStation"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainStationBusStop",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "TrainStationBusStop"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#HomeStation",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "HomeStation"
+      }
+    } ],
+    "id" : "216",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FlightRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightRoute"
+    },
+    "id" : "344",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CarSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CarSegment"
+    },
+    "id" : "18",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HotelChain",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelChain"
+    },
+    "id" : "401",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RentalCarSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RentalCarSegment"
+    },
+    "id" : "19",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#MetroStation",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetroStation"
+    },
+    "id" : "222",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HumanPowered",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanPowered"
+    },
+    "subClasses" : [ "161", "159", "120" ],
+    "id" : "160",
+    "superClasses" : [ "194" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RegionalTrain",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalTrain"
+    },
+    "id" : "346",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CycleSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CycleSegment"
+    },
+    "id" : "173",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#PublicSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicSegment"
+    },
+    "subClasses" : [ "56", "112", "55", "33", "390", "65" ],
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#ConnectionSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConnectionSegment"
+    },
+    "id" : "170",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#OneWayTrip",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OneWayTrip"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxGolfTrip",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SaintEtienneToBordeauxGolfTrip"
+      }
+    } ],
+    "id" : "16",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#UberService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UberService"
+    },
+    "id" : "250",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusinessTrip",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessTrip"
+    },
+    "id" : "10",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Bus",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus"
+    },
+    "subClasses" : [ "267", "268" ],
+    "id" : "66",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FlixbusService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlixbusService"
+    },
+    "id" : "241",
+    "superClasses" : [ "118" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CarRentalService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CarRentalService"
+    },
+    "id" : "204",
+    "superClasses" : [ "100" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#WeekendSchedule",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WeekendSchedule"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#TGV6579Schedule",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "TGV6579Schedule"
+      }
+    } ],
+    "id" : "40",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#PrivateTransport",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrivateTransport"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#LocalTaxi",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "LocalTaxi"
+      }
+    } ],
+    "subClasses" : [ "2", "1", "7", "8" ],
+    "id" : "197",
+    "superClasses" : [ "194" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TramRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TramRoute"
+    },
+    "id" : "378",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusBooking"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusTicket",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BusTicket"
+      }
+    } ],
+    "id" : "207",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Taxi",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi"
+    },
+    "id" : "2",
+    "superClasses" : [ "197" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#InternationalFlightService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InternationalFlightService"
+    },
+    "id" : "190",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTrainService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighSpeedTrainService"
+    },
+    "id" : "368",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FlightBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightBooking"
+    },
+    "id" : "206",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#WalkSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WalkSegment"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusStopToTrainStationSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BusStopToTrainStationSegment"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#HomeToBusStopWalkSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "HomeToBusStopWalkSegment"
+      }
+    } ],
+    "id" : "174",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FerryRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FerryRoute"
+    },
+    "id" : "336",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TramStop",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TramStop"
+    },
+    "id" : "213",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HospitalityCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HospitalityCompany"
+    },
+    "subClasses" : [ "401" ],
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Restaurant",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant"
+    },
+    "id" : "53",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HumanPoweredSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanPoweredSegment"
+    },
+    "subClasses" : [ "179", "174", "173" ],
+    "id" : "30",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Flight",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight"
+    },
+    "id" : "354",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#WaitingSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WaitingSegment"
+    },
+    "id" : "26",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#MetroSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetroSegment"
+    },
+    "id" : "55",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusCompany"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#STAS",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "STAS"
+      }
+    } ],
+    "id" : "138",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#LongDistanceBusSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongDistanceBusSegment"
+    },
+    "id" : "243",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RideshareSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RideshareSegment"
+    },
+    "id" : "24",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RentalCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RentalCompany"
+    },
+    "id" : "132",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#DirectItinerary",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DirectItinerary"
+    },
+    "id" : "260",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TramSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TramSegment"
+    },
+    "id" : "56",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusRoute"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusLineM6Route",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BusLineM6Route"
+      }
+    } ],
+    "id" : "335",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#ReturnTrip",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReturnTrip"
+    },
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainCompany"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SNCF",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SNCF"
+      }
+    } ],
+    "id" : "144",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusService"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#LocalBus",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "LocalBus"
+      }
+    } ],
+    "subClasses" : [ "245", "240", "241" ],
+    "id" : "118",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TramService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TramService"
+    },
+    "id" : "103",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainService"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#TGV6578",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "TGV6578"
+      }
+    } ],
+    "subClasses" : [ "225", "352", "368" ],
+    "id" : "97",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Walking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Walking"
+    },
+    "id" : "120",
+    "superClasses" : [ "160" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FerryService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FerryService"
+    },
+    "id" : "110",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Route",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Route",
+      "en" : "Route"
+    },
+    "subClasses" : [ "336", "319", "335", "375", "344", "378" ],
+    "comment" : {
+      "en" : "A defined path between locations that is followed by a transportation service. Routes consist of a sequence of stops or waypoints."
+    },
+    "id" : "72"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TramCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TramCompany"
+    },
+    "id" : "135",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Itinerary",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Itinerary",
+      "en" : "Itinerary"
+    },
+    "subClasses" : [ "254", "257", "152", "260" ],
+    "comment" : {
+      "en" : "A complete plan of a trip, consisting of ordered trip segments that together form the journey from the origin to the destination."
+    },
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "419",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "400",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "357",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "440",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "398",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "430",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "295",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainBooking"
+    },
+    "id" : "150",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "441",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "424",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "435",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#AccommodationBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccommodationBooking"
+    },
+    "subClasses" : [ "91" ],
+    "id" : "92",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HomeLocation",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HomeLocation"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienne",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SaintEtienne"
+      }
+    } ],
+    "id" : "185",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#BikeRentalService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BikeRentalService"
+    },
+    "id" : "205",
+    "superClasses" : [ "100" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "323",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "437",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "421",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#HolidaySchedule",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HolidaySchedule"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#TGV6577Schedule",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "TGV6577Schedule"
+      }
+    } ],
+    "id" : "38",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Car",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Car"
+    },
+    "id" : "1",
+    "superClasses" : [ "197" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Tram",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tram"
+    },
+    "id" : "126",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#InterCityBusService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterCityBusService"
+    },
+    "id" : "245",
+    "superClasses" : [ "118" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FerryBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FerryBooking"
+    },
+    "id" : "208",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#RideshareBooking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RideshareBooking"
+    },
+    "id" : "209",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CityBus",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CityBus"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#StEtienneCityBus",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "StEtienneCityBus"
+      }
+    } ],
+    "id" : "267",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CityBusSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CityBusSegment"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BusToTrainStationSegment",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BusToTrainStationSegment"
+      }
+    } ],
+    "id" : "247",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Pilot",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pilot"
+    },
+    "id" : "157",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FerryCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FerryCompany"
+    },
+    "id" : "141",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FastestItinerary",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FastestItinerary"
+    },
+    "id" : "254",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Train",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Train"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#HighSpeedTGV",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "HighSpeedTGV"
+      }
+    } ],
+    "subClasses" : [ "342", "346", "151" ],
+    "id" : "124",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#CityBusService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CityBusService"
+    },
+    "id" : "240",
+    "superClasses" : [ "118" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#LongDistanceBus",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongDistanceBus"
+    },
+    "id" : "268",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Driver",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Driver"
+    },
+    "id" : "156",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#Booking",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Booking",
+      "en" : "Booking"
+    },
+    "subClasses" : [ "149", "92" ],
+    "comment" : {
+      "en" : "A reservation for a specific transportation service, accommodation, or other travel-related service for a particular date and time."
+    },
+    "id" : "108"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#PublicTransport",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicTransport"
+    },
+    "subClasses" : [ "59", "354", "66", "154", "124", "126" ],
+    "id" : "60",
+    "superClasses" : [ "194" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TransportCompany",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany"
+    },
+    "subClasses" : [ "129", "132", "135", "138", "141", "144", "147" ],
+    "id" : "81",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainRoute"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneToBordeauxRoute",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SaintEtienneToBordeauxRoute"
+      }
+    } ],
+    "id" : "375",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#FerrySegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FerrySegment"
+    },
+    "id" : "390",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TrainStation",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainStation"
+    },
+    "individuals" : [ {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#BordeauxStation",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "BordeauxStation"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#SaintEtienneStation",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "SaintEtienneStation"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#ValenceTrainStation",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "ValenceTrainStation"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#LyonTrainStation",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "LyonTrainStation"
+      }
+    }, {
+      "iri" : "http://tripplanning/ontologies/tripplanning.owl#MontpellierTrainStation",
+      "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+      "labels" : {
+        "IRI-based" : "MontpellierTrainStation"
+      }
+    } ],
+    "id" : "219",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#TransportService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportService",
+      "en" : "Transportation Service"
+    },
+    "subClasses" : [ "118", "43", "95", "97", "100", "103", "106", "110" ],
+    "comment" : {
+      "en" : "A specific service provided by a transportation company, such as a train line, bus route, or flight route"
+    },
+    "id" : "58"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "271",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "272",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "273",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "274",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "282",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "290",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "293",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "294",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "296",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "298",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "299",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "300",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "301",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "306",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "308",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "312",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "313",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "314",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "315",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "316",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "317",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "318",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "320",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "321",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "322",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "324",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "325",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "326",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "327",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "328",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "329",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "330",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "331",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "332",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "333",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "334",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "358",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "359",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "360",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "361",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "362",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "363",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "364",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "365",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "366",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "367",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "369",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "370",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "371",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "372",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "373",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "374",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "376",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "377",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "379",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "380",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "381",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "382",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "383",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "384",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "385",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "386",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "387",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "388",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "389",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "391",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "392",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "393",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "394",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "395",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "396",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "397",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "399",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "402",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "403",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "404",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "405",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "406",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "407",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "408",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "409",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "410",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "411",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "412",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "413",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "414",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "415",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "416",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "417",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "418",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "420",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "422",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "423",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "425",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "426",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "427",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "428",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "429",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "431",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "432",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "433",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "434",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "436",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "438",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "439",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "442",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "443",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "444",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "445",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "446",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "447",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "448",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "450",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "451",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "452",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "453",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "454",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "455",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "456",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "457",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "458",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "459",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "460",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "461",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "462",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "463",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "464",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "465",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "466",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "467",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "468",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "469",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "470",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "471",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "472",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "473",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "474",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "475",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "476",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "477",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "478",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "479",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "480",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "481",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "482",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "483",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "484",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "485",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "486",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "487",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "488",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "489",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "490",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "491",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "492",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "493",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "494",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "495",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "496",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "497",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "498",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "499",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "500",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "501",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "502",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "503",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "504",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "505",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "506",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "5",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "24",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "22",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "28",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "22",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "24",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#platformNumber",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "platformNumber"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasSegment"
+    },
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasFirstSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasFirstSegment"
+    },
+    "domain" : "36",
+    "attributes" : [ "functional", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "50",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "50",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "56",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesMode",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "usesMode"
+    },
+    "domain" : "65",
+    "attributes" : [ "functional", "allValues", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "16",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "37",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "13",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "37",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "16",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "37",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "46",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#duration",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "duration"
+    },
+    "cardinality" : "1",
+    "domain" : "84",
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasStop",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "hasStop"
+    },
+    "domain" : "72",
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "range" : "33",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "58",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "58",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "58",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "58",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "58",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "58",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#arriveTime",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "arriveTime"
+    },
+    "cardinality" : "1",
+    "domain" : "104",
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "range" : "58",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "domain" : "120",
+    "range" : "120",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "210",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "58",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "60",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "60",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "81",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "81",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "81",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "81",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "81",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "81",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "81",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "domain" : "149",
+    "range" : "150",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "209",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "60",
+    "domain" : "154",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "157",
+    "domain" : "156",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "160",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "163",
+    "domain" : "156",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "160",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "163",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "21",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "usesService"
+    },
+    "domain" : "112",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#terminal",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "terminal"
+    },
+    "domain" : "111",
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "range" : "167",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "174",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "167",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "174",
+    "domain" : "179",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "86",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "161",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "86",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "120",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "86",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "120",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "86",
+    "domain" : "177",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "190",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "160",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "26",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "194",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "21",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "194",
+    "domain" : "197",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "26",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "167",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "26",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "167",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "179",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#madeBy",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "madeBy"
+    },
+    "domain" : "108",
+    "attributes" : [ "object" ],
+    "id" : "203"
+  }, {
+    "range" : "69",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "167",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "69",
+    "domain" : "213",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "21",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "69",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "26",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "69",
+    "domain" : "219",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "167",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "69",
+    "domain" : "222",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "21",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "194",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "177",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "177",
+    "domain" : "176",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "69",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "177",
+    "domain" : "230",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "177",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "63",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "69",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "63",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  }, {
+    "range" : "69",
+    "domain" : "177",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "63",
+    "domain" : "156",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "30",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "range" : "95",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "241",
+    "domain" : "240",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "65",
+    "domain" : "243",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "245",
+    "domain" : "240",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "range" : "65",
+    "domain" : "247",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "245",
+    "domain" : "241",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
+  }, {
+    "range" : "43",
+    "domain" : "250",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "249"
+  }, {
+    "range" : "185",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "251"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "range" : "254",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "149",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "257",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "149",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "254",
+    "domain" : "260",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "149",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "257",
+    "domain" : "260",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "149",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "257",
+    "domain" : "254",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
+  }, {
+    "range" : "149",
+    "domain" : "209",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "range" : "268",
+    "domain" : "267",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "95",
+    "domain" : "190",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
+  }, {
+    "range" : "243",
+    "domain" : "247",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasDropoff",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasDropoff"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "271"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#operatedBy",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "operatedBy"
+    },
+    "domain" : "58",
+    "attributes" : [ "functional", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "22",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
+  }, {
+    "range" : "28",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
+  }, {
+    "range" : "22",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "28",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
+  }, {
+    "range" : "100",
+    "domain" : "204",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "260",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "100",
+    "domain" : "205",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "106",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#locatedIn",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "domain" : "86",
+    "attributes" : [ "object", "transitive" ],
+    "id" : "281"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#postalCode",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "postalCode"
+    },
+    "domain" : "86",
+    "attributes" : [ "datatype" ],
+    "id" : "282"
+  }, {
+    "range" : "110",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "283"
+  }, {
+    "range" : "103",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "100",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "range" : "106",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "97",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "287"
+  }, {
+    "range" : "43",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "range" : "135",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "289"
+  }, {
+    "range" : "135",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "110",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "118",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "292"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#rating",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "rating"
+    },
+    "domain" : "90",
+    "attributes" : [ "datatype" ],
+    "id" : "293"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#longitude",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "295",
+    "label" : {
+      "IRI-based" : "longitude"
+    },
+    "cardinality" : "1",
+    "domain" : "86",
+    "attributes" : [ "datatype" ],
+    "id" : "294"
+  }, {
+    "range" : "135",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "144",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "297"
+  }, {
+    "range" : "144",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "144",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#serves",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "serves"
+    },
+    "domain" : "58",
+    "attributes" : [ "object" ],
+    "id" : "300"
+  }, {
+    "range" : "147",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "147",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "135",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "range" : "144",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "132",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "range" : "135",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "216",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "range" : "219",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "308"
+  }, {
+    "range" : "222",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
+  }, {
+    "range" : "97",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "103",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "103",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "usesService"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "313"
+  }, {
+    "range" : "103",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "314"
+  }, {
+    "range" : "103",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "315"
+  }, {
+    "range" : "97",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "316"
+  }, {
+    "range" : "97",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "317"
+  }, {
+    "range" : "43",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "318"
+  }, {
+    "range" : "43",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "320"
+  }, {
+    "range" : "100",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "321"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#city",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "323",
+    "label" : {
+      "IRI-based" : "city"
+    },
+    "domain" : "86",
+    "attributes" : [ "datatype" ],
+    "id" : "322"
+  }, {
+    "range" : "103",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "324"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#website",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "website"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype" ],
+    "id" : "325"
+  }, {
+    "range" : "100",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "326"
+  }, {
+    "range" : "106",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "327"
+  }, {
+    "range" : "97",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "328"
+  }, {
+    "range" : "43",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "329"
+  }, {
+    "range" : "43",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "330"
+  }, {
+    "range" : "100",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "331"
+  }, {
+    "range" : "103",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "332"
+  }, {
+    "range" : "97",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "333"
+  }, {
+    "range" : "336",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "334"
+  }, {
+    "range" : "36",
+    "domain" : "260",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
+  }, {
+    "range" : "150",
+    "domain" : "209",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "92",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "range" : "319",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "124",
+    "domain" : "342",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "344",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "124",
+    "domain" : "346",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "124",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "108",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "150",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "108",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "60",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "range" : "60",
+    "domain" : "354",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "353"
+  }, {
+    "range" : "60",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#email",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "357",
+    "label" : {
+      "IRI-based" : "email"
+    },
+    "domain" : "62",
+    "attributes" : [ "datatype" ],
+    "id" : "356"
+  }, {
+    "range" : "209",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "358"
+  }, {
+    "range" : "150",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
+  }, {
+    "range" : "150",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "360"
+  }, {
+    "range" : "209",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
+  }, {
+    "range" : "209",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "362"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasLastSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasLastSegment"
+    },
+    "domain" : "36",
+    "attributes" : [ "functional", "object" ],
+    "id" : "363"
+  }, {
+    "range" : "206",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "364"
+  }, {
+    "range" : "250",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "365"
+  }, {
+    "range" : "204",
+    "domain" : "205",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "366"
+  }, {
+    "range" : "97",
+    "domain" : "368",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "367"
+  }, {
+    "range" : "206",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "369"
+  }, {
+    "range" : "72",
+    "domain" : "336",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "370"
+  }, {
+    "range" : "208",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "371"
+  }, {
+    "range" : "72",
+    "domain" : "319",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "372"
+  }, {
+    "range" : "72",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "373"
+  }, {
+    "range" : "72",
+    "domain" : "375",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "374"
+  }, {
+    "range" : "72",
+    "domain" : "344",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "376"
+  }, {
+    "range" : "72",
+    "domain" : "378",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "377"
+  }, {
+    "range" : "36",
+    "domain" : "254",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "379"
+  }, {
+    "range" : "36",
+    "domain" : "257",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "380"
+  }, {
+    "range" : "36",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "381"
+  }, {
+    "range" : "213",
+    "domain" : "222",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "382"
+  }, {
+    "range" : "219",
+    "domain" : "222",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "383"
+  }, {
+    "range" : "213",
+    "domain" : "219",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "384"
+  }, {
+    "range" : "222",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "385"
+  }, {
+    "range" : "213",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "386"
+  }, {
+    "range" : "213",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "387"
+  }, {
+    "range" : "219",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "388"
+  }, {
+    "range" : "55",
+    "domain" : "390",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "389"
+  }, {
+    "range" : "112",
+    "domain" : "390",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "391"
+  }, {
+    "range" : "56",
+    "domain" : "390",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "392"
+  }, {
+    "range" : "33",
+    "domain" : "390",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "393"
+  }, {
+    "range" : "55",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "394"
+  }, {
+    "range" : "56",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "395"
+  }, {
+    "range" : "33",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "396"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#gate",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "398",
+    "label" : {
+      "IRI-based" : "gate"
+    },
+    "domain" : "112",
+    "attributes" : [ "datatype" ],
+    "id" : "397"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#distance",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "400",
+    "label" : {
+      "IRI-based" : "distance"
+    },
+    "cardinality" : "1",
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "399"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "usesService"
+    },
+    "domain" : "65",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "402"
+  }, {
+    "range" : "378",
+    "domain" : "375",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "403"
+  }, {
+    "range" : "112",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "404"
+  }, {
+    "range" : "390",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "405"
+  }, {
+    "range" : "378",
+    "domain" : "344",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "406"
+  }, {
+    "range" : "375",
+    "domain" : "344",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "407"
+  }, {
+    "range" : "378",
+    "domain" : "319",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "408"
+  }, {
+    "range" : "375",
+    "domain" : "319",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "409"
+  }, {
+    "range" : "319",
+    "domain" : "344",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "410"
+  }, {
+    "range" : "378",
+    "domain" : "336",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "411"
+  }, {
+    "range" : "375",
+    "domain" : "336",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "412"
+  }, {
+    "range" : "378",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "413"
+  }, {
+    "range" : "375",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "414"
+  }, {
+    "range" : "319",
+    "domain" : "336",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "415"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasSchedule",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasSchedule"
+    },
+    "domain" : "71",
+    "attributes" : [ "object" ],
+    "id" : "416"
+  }, {
+    "range" : "344",
+    "domain" : "336",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "417"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#departTime",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "419",
+    "label" : {
+      "IRI-based" : "departTime"
+    },
+    "cardinality" : "1",
+    "domain" : "93",
+    "attributes" : [ "datatype" ],
+    "id" : "418"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#country",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "421",
+    "label" : {
+      "IRI-based" : "country"
+    },
+    "domain" : "86",
+    "attributes" : [ "datatype" ],
+    "id" : "420"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasAlternative",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "194",
+    "label" : {
+      "IRI-based" : "hasAlternative"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "422"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#name",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "424",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "cardinality" : "1",
+    "domain" : "98",
+    "attributes" : [ "datatype" ],
+    "id" : "423"
+  }, {
+    "range" : "33",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "425"
+  }, {
+    "range" : "55",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "426"
+  }, {
+    "range" : "56",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "427"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasStart",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasStart"
+    },
+    "domain" : "101",
+    "attributes" : [ "functional", "object" ],
+    "id" : "428"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#latitude",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "430",
+    "label" : {
+      "IRI-based" : "latitude"
+    },
+    "cardinality" : "1",
+    "domain" : "86",
+    "attributes" : [ "datatype" ],
+    "id" : "429"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#previousSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "previousSegment"
+    },
+    "domain" : "22",
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "431"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#price",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "price"
+    },
+    "domain" : "107",
+    "attributes" : [ "datatype" ],
+    "id" : "432"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#connectsWith",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "connectsWith"
+    },
+    "domain" : "69",
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "433"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#currency",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "435",
+    "label" : {
+      "IRI-based" : "currency"
+    },
+    "domain" : "113",
+    "attributes" : [ "datatype" ],
+    "id" : "434"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#code",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "437",
+    "label" : {
+      "IRI-based" : "code"
+    },
+    "domain" : "114",
+    "attributes" : [ "datatype" ],
+    "id" : "436"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesMode",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "194",
+    "label" : {
+      "IRI-based" : "usesMode"
+    },
+    "domain" : "22",
+    "attributes" : [ "functional", "object" ],
+    "id" : "438"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#phoneNumber",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "phoneNumber"
+    },
+    "domain" : "88",
+    "attributes" : [ "datatype" ],
+    "id" : "439"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasPlan",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasPlan"
+    },
+    "domain" : "5",
+    "attributes" : [ "functional", "object" ],
+    "id" : "442"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#bookingFor",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "bookingFor"
+    },
+    "cardinality" : "1",
+    "domain" : "108",
+    "attributes" : [ "object" ],
+    "id" : "443"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#operatedBy",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "operatedBy"
+    },
+    "domain" : "81",
+    "attributes" : [ "someValues", "functional", "object" ],
+    "id" : "444"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#flightNumber",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "440",
+    "label" : {
+      "IRI-based" : "flightNumber"
+    },
+    "cardinality" : "1",
+    "domain" : "112",
+    "attributes" : [ "datatype" ],
+    "id" : "445"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#connectsWith",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "connectsWith"
+    },
+    "domain" : "69",
+    "attributes" : [ "someValues", "object", "symmetric" ],
+    "id" : "446"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#serves",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "serves"
+    },
+    "domain" : "58",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "447"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#madeBy",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "madeBy"
+    },
+    "domain" : "163",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "448"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesMode",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "usesMode"
+    },
+    "domain" : "33",
+    "attributes" : [ "functional", "allValues", "object" ],
+    "id" : "450"
+  }, {
+    "range" : "97",
+    "domain" : "352",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "451"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "usesService"
+    },
+    "domain" : "33",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "452"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#status",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "status"
+    },
+    "domain" : "108",
+    "attributes" : [ "datatype" ],
+    "id" : "453"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasPickup",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasPickup"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "454"
+  }, {
+    "range" : "197",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "455"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "456"
+  }, {
+    "range" : "45",
+    "domain" : "401",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "457"
+  }, {
+    "range" : "81",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "458"
+  }, {
+    "range" : "30",
+    "domain" : "179",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "459"
+  }, {
+    "range" : "53",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "460"
+  }, {
+    "range" : "30",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "461"
+  }, {
+    "range" : "197",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "462"
+  }, {
+    "range" : "30",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "463"
+  }, {
+    "range" : "60",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "464"
+  }, {
+    "range" : "118",
+    "domain" : "245",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "465"
+  }, {
+    "range" : "60",
+    "domain" : "197",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "466"
+  }, {
+    "range" : "118",
+    "domain" : "240",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "467"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasSegment",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasSegment"
+    },
+    "domain" : "36",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "468"
+  }, {
+    "range" : "118",
+    "domain" : "241",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "469"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesService",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "usesService"
+    },
+    "domain" : "21",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "470"
+  }, {
+    "range" : "97",
+    "domain" : "225",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "471"
+  }, {
+    "range" : "352",
+    "domain" : "225",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "472"
+  }, {
+    "range" : "197",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "473"
+  }, {
+    "range" : "39",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "474"
+  }, {
+    "range" : "197",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "475"
+  }, {
+    "range" : "40",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "476"
+  }, {
+    "range" : "21",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "477"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#usesMode",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "354",
+    "label" : {
+      "IRI-based" : "usesMode"
+    },
+    "domain" : "112",
+    "attributes" : [ "functional", "allValues", "object" ],
+    "id" : "478"
+  }, {
+    "range" : "21",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "479"
+  }, {
+    "range" : "176",
+    "domain" : "230",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "480"
+  }, {
+    "range" : "21",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "481"
+  }, {
+    "range" : "151",
+    "domain" : "342",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "482"
+  }, {
+    "range" : "21",
+    "domain" : "390",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "483"
+  }, {
+    "range" : "346",
+    "domain" : "342",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "484"
+  }, {
+    "range" : "21",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "485"
+  }, {
+    "range" : "346",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "486"
+  }, {
+    "range" : "66",
+    "domain" : "267",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "487"
+  }, {
+    "range" : "225",
+    "domain" : "368",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "488"
+  }, {
+    "range" : "66",
+    "domain" : "268",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "489"
+  }, {
+    "range" : "352",
+    "domain" : "368",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "490"
+  }, {
+    "range" : "197",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "491"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#hasEnd",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasEnd"
+    },
+    "domain" : "67",
+    "attributes" : [ "functional", "object" ],
+    "id" : "492"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#maxBaggage",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "441",
+    "label" : {
+      "IRI-based" : "maxBaggage"
+    },
+    "domain" : "58",
+    "attributes" : [ "datatype" ],
+    "id" : "493"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#street",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "street"
+    },
+    "domain" : "86",
+    "attributes" : [ "datatype" ],
+    "id" : "494"
+  }, {
+    "range" : "141",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "495"
+  }, {
+    "range" : "132",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "496"
+  }, {
+    "range" : "147",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "497"
+  }, {
+    "range" : "144",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "498"
+  }, {
+    "range" : "135",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "499"
+  }, {
+    "range" : "141",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "500"
+  }, {
+    "range" : "132",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "501"
+  }, {
+    "range" : "147",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "502"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#followsRoute",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "followsRoute"
+    },
+    "domain" : "58",
+    "attributes" : [ "object" ],
+    "id" : "503"
+  }, {
+    "range" : "149",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "504"
+  }, {
+    "range" : "138",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "505"
+  }, {
+    "iri" : "http://tripplanning/ontologies/tripplanning.owl#nextSegment",
+    "inverse" : "431",
+    "baseIri" : "http://tripplanning/ontologies/tripplanning.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "nextSegment"
+    },
+    "domain" : "22",
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "506"
+  } ]
+}
