@@ -1,34 +1,54 @@
-About Widoco output
-===================
-The purpose of Widoco is to reuse and integrate existing tools for documentation, plus the set of features listed below:
-* Separation of the sections of your html page so you can write them independently and replace only those needed.
-* Automatic annotation in RDF-a of the html produced.
-* Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).
-* Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology.
-* Guidelines on the main sections that your document should have and how to complete them.
+# KRR Ontology Visualization
 
-Widoco will create 3 different folders:
-|
-|-provenance (a folder including an html and RDF serialization of how the documentation page was created)
-|-resources (folder with the different resources)
-|-sections (folder with the different sections of the documentation, separated for easy editing. Just edit one and the main page will be updated)
+## Overview
+This repository contains an interactive visualization for Knowledge Representation and Reasoning (KRR) ontology.
 
-Completing ontology metadata.
-===================
-Widoco uses the ontology metadata to update a configuration file. If you complete that configuration file (ended up widoco.conf), the tool will enhance your html with additional details, such as how to cite the document, previous revisions, icons with the licence, etc.
+## Access Options
 
-Browser issues
-==========
-The result of executing Widoco is an html file. We have tested it in Mozilla, IE and Chrome, and when the page is stored in a server all the browsers work correctly. If you view the file locally, we recommend you to use Mozilla Firefox (or Internet Explorer, if you must). Google Chrome will not show the contents correctly, as it doesn't allow  XMLHttpRequest without HTTP. If you want to view the page locally with Google Chrome you have two possibilities:
+### Option 1: Online Deployed Version
+Access the deployed visualization directly at:
+```
+https://krr-ontology.onrender.com/index-en.html
+```
 
-a) Place the file in a server and access it via its URL (for example, put it in dropbox and access through its public url).
+### Option 2: Local Setup
+If the online version isn't accessible, run locally:
 
-b) Execute Chrome with the following commands :
+1. Clone this repository
+2. Navigate to the parent directory in terminal
+3. Start a Python HTTP server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+4. Open in browser:
+   ```
+   http://localhost:8000/output/index-en.html
+   ```
 
-(WIN) chrome.exe --allow-file-access-from-files,
+## Features
+- Interactive ontology exploration
+- Hierarchical concept navigation
+- Relationship visualization
+- Detailed component information
 
-(OSX) open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
+## Directory Structure
+```
+.
+├── Output/
+│   ├── resources      
+│   ├── section/              
+│   └── webvowl/  
+|   └── index-en.html/                # Main file
+└── ...
+```
 
-(UNX) /usr/bin/google-chrome --allow-file-access-from-files
+## Troubleshooting
 
-Do you have a problem? open an issue at https://github.com/dgarijo/Widoco
+### Common Issues
+- **Port already in use**: Try another port (e.g., `python3 -m http.server 8080`)
+- **Access denied**: Check firewall settings
+- **Visualization not loading**: Ensure all files are present in the output directory
+
+### Requirements
+- Python 3.x
+- Modern web browser (Chrome, Firefox, Safari, Edge)
