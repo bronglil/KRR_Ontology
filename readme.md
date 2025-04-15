@@ -18,11 +18,11 @@ If the online version isn't accessible, run locally:
 2. Navigate to the parent directory in terminal
 3. Start a Python HTTP server:
    ```bash
-   python3 -m http.server 8000
+   python -m http.server 8000
    ```
 4. Open in browser:
    ```
-   http://localhost:8000/output/index-en.html
+   http://localhost:8000/index-en.html
    ```
 
 ## Features
@@ -45,7 +45,7 @@ If the online version isn't accessible, run locally:
 ## Troubleshooting
 
 ### Common Issues
-- **Port already in use**: Try another port (e.g., `python3 -m http.server 8080`)
+- **Port already in use**: Try another port (e.g., `python -m http.server 8080`)
 - **Access denied**: Check firewall settings
 - **Visualization not loading**: Ensure all files are present in the output directory
 
