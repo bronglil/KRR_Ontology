@@ -1,0 +1,623 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://www.semanticweb.org/tripplanning#> .
+
+# Ontology Declaration
+<http://www.semanticweb.org/tripplanning> a owl:Ontology .
+
+#################################################
+# CLASS HIERARCHY
+#################################################
+
+# Top-level Classes
+:Location a owl:Class .
+:TransportMode a owl:Class .
+:Trip a owl:Class .
+:Itinerary a owl:Class .
+:TripSegment a owl:Class .
+:TransportService a owl:Class .
+:Company a owl:Class .
+:Booking a owl:Class .
+:Route a owl:Class .
+:Person a owl:Class .
+:Schedule a owl:Class .
+
+# Location Subclasses
+:HomeLocation a owl:Class ;
+    rdfs:subClassOf :Location .
+:TransportHub a owl:Class ;
+    rdfs:subClassOf :Location .
+:RecreationSite a owl:Class ;
+    rdfs:subClassOf :Location .
+:CommercialSite a owl:Class ;
+    rdfs:subClassOf :Location .
+
+# TransportHub Subclasses
+:TrainStation a owl:Class ;
+    rdfs:subClassOf :TransportHub .
+:BusStation a owl:Class ;
+    rdfs:subClassOf :TransportHub .
+:TramStop a owl:Class ;
+    rdfs:subClassOf :TransportHub .
+:MetroStation a owl:Class ;
+    rdfs:subClassOf :TransportHub .
+:Airport a owl:Class ;
+    rdfs:subClassOf :TransportHub .
+
+# RecreationSite Subclasses
+:GolfCourse a owl:Class ;
+    rdfs:subClassOf :RecreationSite .
+:Park a owl:Class ;
+    rdfs:subClassOf :RecreationSite .
+
+# CommercialSite Subclasses
+:Restaurant a owl:Class ;
+    rdfs:subClassOf :CommercialSite .
+:Hotel a owl:Class ;
+    rdfs:subClassOf :CommercialSite .
+
+# TransportMode Subclasses
+:PublicTransport a owl:Class ;
+    rdfs:subClassOf :TransportMode .
+:PrivateTransport a owl:Class ;
+    rdfs:subClassOf :TransportMode .
+:HumanPowered a owl:Class ;
+    rdfs:subClassOf :TransportMode .
+
+# PublicTransport Subclasses
+:Train a owl:Class ;
+    rdfs:subClassOf :PublicTransport .
+:Bus a owl:Class ;
+    rdfs:subClassOf :PublicTransport .
+:Tram a owl:Class ;
+    rdfs:subClassOf :PublicTransport .
+:Metro a owl:Class ;
+    rdfs:subClassOf :PublicTransport .
+:Flight a owl:Class ;
+    rdfs:subClassOf :PublicTransport .
+:Ferry a owl:Class ;
+    rdfs:subClassOf :PublicTransport .
+
+# Train Subclasses
+:HighSpeedTrain a owl:Class ;
+    rdfs:subClassOf :Train .
+:RegionalTrain a owl:Class ;
+    rdfs:subClassOf :Train .
+:IntercityTrain a owl:Class ;
+    rdfs:subClassOf :Train .
+
+# Bus Subclasses
+:CityBus a owl:Class ;
+    rdfs:subClassOf :Bus .
+:LongDistanceBus a owl:Class ;
+    rdfs:subClassOf :Bus .
+
+# PrivateTransport Subclasses
+:Car a owl:Class ;
+    rdfs:subClassOf :PrivateTransport .
+:Taxi a owl:Class ;
+    rdfs:subClassOf :PrivateTransport .
+:Rideshare a owl:Class ;
+    rdfs:subClassOf :PrivateTransport .
+:RentalCar a owl:Class ;
+    rdfs:subClassOf :PrivateTransport .
+
+# HumanPowered Subclasses
+:Walking a owl:Class ;
+    rdfs:subClassOf :HumanPowered .
+:Cycling a owl:Class ;
+    rdfs:subClassOf :HumanPowered .
+:Scooter a owl:Class ;
+    rdfs:subClassOf :HumanPowered .
+
+# Trip Subclasses
+:OneWayTrip a owl:Class ;
+    rdfs:subClassOf :Trip .
+:ReturnTrip a owl:Class ;
+    rdfs:subClassOf :Trip .
+:BusinessTrip a owl:Class ;
+    rdfs:subClassOf :Trip .
+:LeisureTrip a owl:Class ;
+    rdfs:subClassOf :Trip .
+
+# Itinerary Subclasses
+:DirectItinerary a owl:Class ;
+    rdfs:subClassOf :Itinerary .
+:MultiModalItinerary a owl:Class ;
+    rdfs:subClassOf :Itinerary .
+:FastestItinerary a owl:Class ;
+    rdfs:subClassOf :Itinerary .
+:CheapestItinerary a owl:Class ;
+    rdfs:subClassOf :Itinerary .
+
+# TripSegment Subclasses
+:PublicSegment a owl:Class ;
+    rdfs:subClassOf :TripSegment .
+:PrivateSegment a owl:Class ;
+    rdfs:subClassOf :TripSegment .
+:HumanPoweredSegment a owl:Class ;
+    rdfs:subClassOf :TripSegment .
+:ConnectionSegment a owl:Class ;
+    rdfs:subClassOf :TripSegment .
+:WaitingSegment a owl:Class ;
+    rdfs:subClassOf :TripSegment .
+
+# PublicSegment Subclasses
+:TrainSegment a owl:Class ;
+    rdfs:subClassOf :PublicSegment .
+:BusSegment a owl:Class ;
+    rdfs:subClassOf :PublicSegment .
+:TramSegment a owl:Class ;
+    rdfs:subClassOf :PublicSegment .
+:MetroSegment a owl:Class ;
+    rdfs:subClassOf :PublicSegment .
+:FlightSegment a owl:Class ;
+    rdfs:subClassOf :PublicSegment .
+:FerrySegment a owl:Class ;
+    rdfs:subClassOf :PublicSegment .
+
+# BusSegment Subclasses
+:CityBusSegment a owl:Class ;
+    rdfs:subClassOf :BusSegment .
+:LongDistanceBusSegment a owl:Class ;
+    rdfs:subClassOf :BusSegment .
+
+# PrivateSegment Subclasses
+:CarSegment a owl:Class ;
+    rdfs:subClassOf :PrivateSegment .
+:TaxiSegment a owl:Class ;
+    rdfs:subClassOf :PrivateSegment .
+:RideshareSegment a owl:Class ;
+    rdfs:subClassOf :PrivateSegment .
+:RentalCarSegment a owl:Class ;
+    rdfs:subClassOf :PrivateSegment .
+
+# HumanPoweredSegment Subclasses
+:WalkSegment a owl:Class ;
+    rdfs:subClassOf :HumanPoweredSegment .
+:CycleSegment a owl:Class ;
+    rdfs:subClassOf :HumanPoweredSegment .
+:ScooterSegment a owl:Class ;
+    rdfs:subClassOf :HumanPoweredSegment .
+
+# Company Subclasses
+:TransportCompany a owl:Class ;
+    rdfs:subClassOf :Company .
+
+# TransportService Subclasses
+:AirlineService a owl:Class ;
+    rdfs:subClassOf :TransportService .
+:TrainService a owl:Class ;
+    rdfs:subClassOf :TransportService .
+:BusService a owl:Class ;
+    rdfs:subClassOf :TransportService .
+
+# Route Subclasses
+:TrainRoute a owl:Class ;
+    rdfs:subClassOf :Route .
+:BusRoute a owl:Class ;
+    rdfs:subClassOf :Route .
+
+# Booking Subclasses
+:TransportBooking a owl:Class ;
+    rdfs:subClassOf :Booking .
+:AccommodationBooking a owl:Class ;
+    rdfs:subClassOf :Booking .
+
+# Person Subclasses
+:Traveler a owl:Class ;
+    rdfs:subClassOf :Person .
+
+#################################################
+# DISJOINT CLASSES
+#################################################
+
+# Location Subclasses Disjoint
+:HomeLocation owl:disjointWith :TransportHub, :RecreationSite, :CommercialSite .
+:TransportHub owl:disjointWith :RecreationSite, :CommercialSite .
+:RecreationSite owl:disjointWith :CommercialSite .
+
+# TransportMode Subclasses Disjoint
+:PublicTransport owl:disjointWith :PrivateTransport, :HumanPowered .
+:PrivateTransport owl:disjointWith :HumanPowered .
+
+# Trip Type Disjoint
+:BusinessTrip owl:disjointWith :LeisureTrip .
+:OneWayTrip owl:disjointWith :ReturnTrip .
+
+# TripSegment Subclasses Disjoint
+:PublicSegment owl:disjointWith :PrivateSegment, :HumanPoweredSegment, :ConnectionSegment, :WaitingSegment .
+:PrivateSegment owl:disjointWith :HumanPoweredSegment, :ConnectionSegment, :WaitingSegment .
+:HumanPoweredSegment owl:disjointWith :ConnectionSegment, :WaitingSegment .
+:ConnectionSegment owl:disjointWith :WaitingSegment .
+
+#################################################
+# OBJECT PROPERTIES
+#################################################
+
+# Trip and TripSegment properties
+:hasStart a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Trip :TripSegment) ] ;
+    rdfs:range :Location .
+
+:hasEnd a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Trip :TripSegment) ] ;
+    rdfs:range :Location .
+
+:hasPlan a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Trip ;
+    rdfs:range :Itinerary .
+
+:hasSegment a owl:ObjectProperty ;
+    rdfs:domain :Itinerary ;
+    rdfs:range :TripSegment .
+
+:usesMode a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :TripSegment ;
+    rdfs:range :TransportMode .
+
+:usesService a owl:ObjectProperty ;
+    rdfs:domain :PublicSegment ;
+    rdfs:range :TransportService .
+
+:operatedBy a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :TransportService ;
+    rdfs:range :Company .
+
+:serves a owl:ObjectProperty ;
+    rdfs:domain :TransportService ;
+    rdfs:range :Location .
+
+:hasStop a owl:ObjectProperty ;
+    rdfs:domain :Route ;
+    rdfs:range :TransportHub .
+
+:connectsWith a owl:ObjectProperty ;
+    rdfs:domain :TransportHub ;
+    rdfs:range :TransportHub .
+
+:hasSchedule a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:TransportService :Route) ] ;
+    rdfs:range :Schedule .
+
+:bookingFor a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Booking ;
+    rdfs:range owl:Thing .
+
+:madeBy a owl:ObjectProperty ;
+    rdfs:domain :Booking ;
+    rdfs:range :Person .
+
+:follows a owl:ObjectProperty ;
+    rdfs:domain :TripSegment ;
+    rdfs:range :TripSegment .
+
+#################################################
+# DATA PROPERTIES
+#################################################
+
+:name a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Location :Company :Route :TransportService :Person) ] ;
+    rdfs:range xsd:string .
+
+:latitude a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :Location ;
+    rdfs:range xsd:decimal .
+
+:longitude a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :Location ;
+    rdfs:range xsd:decimal .
+
+:departTime a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Trip :TripSegment) ] ;
+    rdfs:range xsd:dateTime .
+
+:arriveTime a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Trip :TripSegment) ] ;
+    rdfs:range xsd:dateTime .
+
+:duration a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Trip :TripSegment) ] ;
+    rdfs:range xsd:duration .
+
+:distance a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :TripSegment ;
+    rdfs:range xsd:decimal .
+
+:price a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:TripSegment :TransportService :Booking) ] ;
+    rdfs:range xsd:decimal .
+
+:currency a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:TripSegment :TransportService :Booking) ] ;
+    rdfs:range xsd:string .
+
+:email a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Company :Person) ] ;
+    rdfs:range xsd:string .
+
+:code a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Route :TransportHub) ] ;
+    rdfs:range xsd:string .
+
+:terminal a owl:DatatypeProperty ;
+    rdfs:domain :Airport ;
+    rdfs:range xsd:string .
+
+:flightNumber a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :FlightSegment ;
+    rdfs:range xsd:string .
+
+:phone a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf (:Company :Person) ] ;
+    rdfs:range xsd:string .
+
+#################################################
+# CLASS AXIOMS AND RESTRICTIONS
+#################################################
+
+# Trip Class Restrictions
+:Trip rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasStart ;
+      owl:onClass :Location ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :hasEnd ;
+      owl:onClass :Location ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :hasPlan ;
+      owl:onClass :Itinerary ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :departTime ;
+      owl:onDataRange xsd:dateTime ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :arriveTime ;
+      owl:onDataRange xsd:dateTime ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :duration ;
+      owl:onDataRange xsd:duration ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# Itinerary Class Restrictions
+:Itinerary rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasSegment ;
+      owl:someValuesFrom :TripSegment ] .
+
+:MultiModalItinerary rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasSegment ;
+      owl:onClass :TripSegment ;
+      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ] .
+
+# TripSegment Class Restrictions
+:TripSegment rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasStart ;
+      owl:onClass :Location ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :hasEnd ;
+      owl:onClass :Location ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :usesMode ;
+      owl:onClass :TransportMode ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :departTime ;
+      owl:onDataRange xsd:dateTime ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :arriveTime ;
+      owl:onDataRange xsd:dateTime ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :duration ;
+      owl:onDataRange xsd:duration ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :distance ;
+      owl:onDataRange xsd:decimal ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# PublicSegment Class Restrictions
+:PublicSegment rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :usesService ;
+      owl:someValuesFrom :TransportService ] .
+
+# Location Class Restrictions
+:Location rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :name ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :latitude ;
+      owl:onDataRange xsd:decimal ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :longitude ;
+      owl:onDataRange xsd:decimal ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# TransportService Class Restrictions
+:TransportService rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :operatedBy ;
+      owl:onClass :Company ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :serves ;
+      owl:someValuesFrom :Location ] .
+
+# Specialized Segment Restrictions
+:FlightSegment rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :usesMode ;
+      owl:allValuesFrom :Flight ],
+    [ a owl:Restriction ;
+      owl:onProperty :usesService ;
+      owl:someValuesFrom :AirlineService ],
+    [ a owl:Restriction ;
+      owl:onProperty :flightNumber ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+:TrainSegment rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :usesMode ;
+      owl:allValuesFrom :Train ],
+    [ a owl:Restriction ;
+      owl:onProperty :usesService ;
+      owl:someValuesFrom :TrainService ] .
+
+:BusSegment rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :usesMode ;
+      owl:allValuesFrom :Bus ],
+    [ a owl:Restriction ;
+      owl:onProperty :usesService ;
+      owl:someValuesFrom :BusService ] .
+
+# Booking Class Restrictions
+:Booking rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :bookingFor ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :madeBy ;
+      owl:someValuesFrom :Person ] .
+
+# TransportBooking Subclass Restrictions
+:TransportBooking rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :bookingFor ;
+      owl:onClass :TransportService ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# AccommodationBooking Subclass Restrictions
+:AccommodationBooking rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :bookingFor ;
+      owl:onClass :Hotel ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# Person Class Restrictions
+:Person rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :name ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# Traveler Subclass Restrictions
+:Traveler rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :madeBy ;
+      owl:someValuesFrom :Booking ] .
+
+# Company Class Restrictions
+:Company rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :name ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :email ;
+      owl:someValuesFrom xsd:string ] .
+
+# TransportCompany Subclass Restrictions
+:TransportCompany rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :operatedBy ;
+      owl:someValuesFrom :TransportService ] .
+
+# Route Class Restrictions
+:Route rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasStop ;
+      owl:onClass :TransportHub ;
+      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :name ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :code ;
+      owl:someValuesFrom xsd:string ] .
+
+# Specific Route Subclass Restrictions
+:TrainRoute rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasStop ;
+      owl:allValuesFrom :TrainStation ] .
+
+:BusRoute rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasStop ;
+      owl:allValuesFrom :BusStation ] .
+
+# TransportHub Class Restrictions
+:TransportHub rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :connectsWith ;
+      owl:someValuesFrom :TransportHub ],
+    [ a owl:Restriction ;
+      owl:onProperty :name ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+    [ a owl:Restriction ;
+      owl:onProperty :code ;
+      owl:someValuesFrom xsd:string ] .
+
+# Airport Specific Restrictions
+:Airport rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :terminal ;
+      owl:someValuesFrom xsd:string ],
+    [ a owl:Restriction ;
+      owl:onProperty :code ;
+      owl:onDataRange xsd:string ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+# Schedule Class Restrictions
+:Schedule rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty :hasSchedule ;
+      owl:someValuesFrom [ a owl:Class ;
+                          owl:unionOf (:TransportService :Route) ] ] .
+
+# Latitude and Longitude Constraints
+:latitude rdfs:range [ a rdfs:Datatype ;
+                      owl:onDatatype xsd:decimal ;
+                      owl:withRestrictions (
+                        [ xsd:minInclusive "-90.0"^^xsd:decimal ]
+                        [ xsd:maxInclusive "90.0"^^xsd:decimal ]
+                      ) ] .
+
+:longitude rdfs:range [ a rdfs:Datatype ;
+                       owl:onDatatype xsd:decimal ;
+                       owl:withRestrictions (
+                         [ xsd:minInclusive "-180.0"^^xsd:decimal ]
+                         [ xsd:maxInclusive "180.0"^^xsd:decimal ]
+                       ) ] .
