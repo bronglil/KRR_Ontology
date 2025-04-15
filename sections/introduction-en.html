@@ -1,3 +1,21 @@
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<span class="markdown">The Trip Planning Ontology(OWL) provides a robust model for organizing and interconnecting concepts critical to travel and transportation planning. It includes a wide range of classes such as Trip, Itinerary, TransportMode, TransportService, Booking, and Location, along with their relationships and properties, to support detailed trip planning scenarios.
+
+The motivation behind this ontology is to address the complexity of modern travel planning, where travelers interact with multiple transport modes (for e.g., flights, trains, buses, rideshares) and services (for e.g., bookings, schedules). By providing a semantic structure, the ontology enables seamless integration of heterogeneous travel data.
+
+The following design decisions shape the ontology:
+
+1) Modularity: The ontology is structured hierarchically, with abstract classesspecialized into specific types. This allows for extensibility and reuse.
+
+2) Granularity: Fine-grained classes and properties ensure precise modeling of travel scenarios, supporting detailed queries and reasoning.
+
+3) Interoperability: Properties like connectsWith for transport hubs and followsRoute for services enable semantic links across entities, facilitating multi-modal itinerary planning.
+
+4) Flexibility: The inclusion of diverse transport modes and itinerary choices caters to various needs, from cost-conscious to time-sensitivity.
+
+The goals of the ontology are as follows:
+1) To provide a unified vocabulary for representing travel-related entities and their relationships.
+
+2) To support the creation of multi-modal itineraries, optimizing for factors like cost, speed, or directness.
+
+3) To enable interoperability among travel platforms by defining clear semantics.</span>
