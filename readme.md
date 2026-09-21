@@ -11,6 +11,9 @@ Access the deployed visualization directly at:
 https://krr-ontology.onrender.com/index-en.html
 ```
 
+<img width="3419" height="1283" alt="image" src="https://github.com/user-attachments/assets/244fdc42-314a-461e-a68d-4bca4ac44de1" />
+
+
 ### Option 2: Local Setup
 If the online version isn't accessible, run locally:
 
